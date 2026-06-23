@@ -19,6 +19,10 @@
 
 - `PUSHPLUS_TOKEN`：PushPlus 用户 token 或消息 token。
 
+如需发送给群组，在仓库 Variables 中配置：
+
+- `PUSHPLUS_TOPIC`：PushPlus 一对多消息的群组编码。留空则只发送给自己。
+
 可选环境变量已经在 workflow 中固定：
 
 - `PUSHPLUS_CHANNEL=wechat`
@@ -51,6 +55,12 @@ python flight_monitor.py --limit-queries 1 --json --no-state-update
 
 ```bash
 gh workflow run flight-price-monitor.yml -f notify_every_run=true
+```
+
+设置群组编码：
+
+```bash
+gh variable set PUSHPLUS_TOPIC --repo MAXMAN2323/flight-price-monitor --body "your-topic-code"
 ```
 
 ## 风险边界
