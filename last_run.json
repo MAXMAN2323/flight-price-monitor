@@ -1,11 +1,111 @@
 {
-  "checked_at": "2026-06-23T19:25:04.009750+00:00",
+  "checked_at": "2026-06-23T21:56:31.140928+00:00",
   "query_count": 56,
-  "candidate_count": 0,
+  "candidate_count": 5,
   "alert_count": 0,
   "alerts": [],
-  "best_by_watch": {},
-  "candidates": [],
+  "best_by_watch": {
+    "beijing-spain": {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "watch_label": "Beijing to Spain round trip",
+      "origin": "PEK",
+      "destination": "BCN",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-07",
+      "price_cny": 18676,
+      "airlines": [
+        "国航",
+        "汉莎航空"
+      ],
+      "detail": "PEK-MUC; MUC-FRA; FRA-BCN",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA0JDThoaEgoyMDI2LTEwLTA3agUSA0JDTnIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    }
+  },
+  "candidates": [
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "watch_label": "Beijing to Spain round trip",
+      "origin": "PEK",
+      "destination": "BCN",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-07",
+      "price_cny": 18676,
+      "airlines": [
+        "国航",
+        "汉莎航空"
+      ],
+      "detail": "PEK-MUC; MUC-FRA; FRA-BCN",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA0JDThoaEgoyMDI2LTEwLTA3agUSA0JDTnIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "watch_label": "Beijing to Spain round trip",
+      "origin": "PEK",
+      "destination": "BCN",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-07",
+      "price_cny": 20159,
+      "airlines": [
+        "国航",
+        "汉莎航空"
+      ],
+      "detail": "PEK-FRA; FRA-MUC; MUC-BCN",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA0JDThoaEgoyMDI2LTEwLTA3agUSA0JDTnIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "watch_label": "Beijing to Spain round trip",
+      "origin": "PEK",
+      "destination": "BCN",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-07",
+      "price_cny": 26540,
+      "airlines": [
+        "国航",
+        "奧地利航空"
+      ],
+      "detail": "PEK-VIE; VIE-BCN",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA0JDThoaEgoyMDI2LTEwLTA3agUSA0JDTnIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "watch_label": "Beijing to Spain round trip",
+      "origin": "PEK",
+      "destination": "BCN",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-07",
+      "price_cny": 37907,
+      "airlines": [
+        "国航",
+        "奧地利航空",
+        "汉莎航空"
+      ],
+      "detail": "PEK-VIE; VIE-MUC; MUC-BCN",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA0JDThoaEgoyMDI2LTEwLTA3agUSA0JDTnIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "watch_label": "Beijing to Spain round trip",
+      "origin": "PEK",
+      "destination": "BCN",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-07",
+      "price_cny": 37970,
+      "airlines": [
+        "国航",
+        "奧地利航空",
+        "汉莎航空"
+      ],
+      "detail": "PEK-VIE; VIE-FRA; FRA-BCN",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA0JDThoaEgoyMDI2LTEwLTA3agUSA0JDTnIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    }
+  ],
   "errors": [
     {
       "source": "google_fast_flights",
@@ -95,349 +195,340 @@
       "destination": "CNX",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-07",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-thailand",
+      "origin": "PEK",
+      "destination": "CNX",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-06",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-thailand",
+      "origin": "PEK",
+      "destination": "CNX",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-07",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-thailand",
+      "origin": "PKX",
+      "destination": "BKK",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-06",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-thailand",
+      "origin": "PKX",
+      "destination": "BKK",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-07",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-thailand",
+      "origin": "PKX",
+      "destination": "BKK",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-06",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-thailand",
+      "origin": "PKX",
+      "destination": "BKK",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-07",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-thailand",
+      "origin": "PKX",
+      "destination": "DMK",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-06",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-thailand",
+      "origin": "PKX",
+      "destination": "DMK",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-07",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-thailand",
+      "origin": "PKX",
+      "destination": "DMK",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-06",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-thailand",
+      "origin": "PKX",
+      "destination": "DMK",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-07",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-thailand",
+      "origin": "PKX",
+      "destination": "CNX",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-06",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-thailand",
+      "origin": "PKX",
+      "destination": "CNX",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-07",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-thailand",
+      "origin": "PKX",
+      "destination": "CNX",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-06",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-thailand",
+      "origin": "PKX",
+      "destination": "CNX",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-07",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PEK",
+      "destination": "MAD",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-06",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PEK",
+      "destination": "MAD",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-07",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PEK",
+      "destination": "MAD",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-06",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PEK",
+      "destination": "MAD",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-07",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PEK",
+      "destination": "BCN",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-06",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PEK",
+      "destination": "BCN",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-07",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PEK",
+      "destination": "BCN",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-06",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PEK",
+      "destination": "AGP",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-06",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PEK",
+      "destination": "AGP",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-07",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PEK",
+      "destination": "AGP",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-06",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PEK",
+      "destination": "AGP",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-07",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PEK",
+      "destination": "VLC",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-06",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PEK",
+      "destination": "VLC",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-07",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PEK",
+      "destination": "VLC",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-06",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PEK",
+      "destination": "VLC",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-07",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PKX",
+      "destination": "MAD",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-06",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PKX",
+      "destination": "MAD",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-07",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PKX",
+      "destination": "MAD",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-06",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PKX",
+      "destination": "MAD",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-07",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PKX",
+      "destination": "BCN",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-06",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PKX",
+      "destination": "BCN",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-07",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PKX",
+      "destination": "BCN",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-06",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PKX",
+      "destination": "BCN",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-07",
       "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-thailand",
-      "origin": "PEK",
-      "destination": "CNX",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-thailand",
-      "origin": "PEK",
-      "destination": "CNX",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-thailand",
-      "origin": "PKX",
-      "destination": "BKK",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-thailand",
-      "origin": "PKX",
-      "destination": "BKK",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-thailand",
-      "origin": "PKX",
-      "destination": "BKK",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-thailand",
-      "origin": "PKX",
-      "destination": "BKK",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-thailand",
-      "origin": "PKX",
-      "destination": "DMK",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-thailand",
-      "origin": "PKX",
-      "destination": "DMK",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-thailand",
-      "origin": "PKX",
-      "destination": "DMK",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-thailand",
-      "origin": "PKX",
-      "destination": "DMK",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-thailand",
-      "origin": "PKX",
-      "destination": "CNX",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-thailand",
-      "origin": "PKX",
-      "destination": "CNX",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-thailand",
-      "origin": "PKX",
-      "destination": "CNX",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-thailand",
-      "origin": "PKX",
-      "destination": "CNX",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PEK",
-      "destination": "MAD",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PEK",
-      "destination": "MAD",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PEK",
-      "destination": "MAD",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PEK",
-      "destination": "MAD",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PEK",
-      "destination": "BCN",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PEK",
-      "destination": "BCN",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PEK",
-      "destination": "BCN",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PEK",
-      "destination": "BCN",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PEK",
-      "destination": "AGP",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PEK",
-      "destination": "AGP",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PEK",
-      "destination": "AGP",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PEK",
-      "destination": "AGP",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PEK",
-      "destination": "VLC",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PEK",
-      "destination": "VLC",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PEK",
-      "destination": "VLC",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PEK",
-      "destination": "VLC",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PKX",
-      "destination": "MAD",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PKX",
-      "destination": "MAD",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PKX",
-      "destination": "MAD",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PKX",
-      "destination": "MAD",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PKX",
-      "destination": "BCN",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PKX",
-      "destination": "BCN",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PKX",
-      "destination": "BCN",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PKX",
-      "destination": "BCN",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
     },
     {
       "source": "google_fast_flights",
