@@ -1,0 +1,66 @@
+name: Flight price monitor
+
+on:
+  workflow_dispatch:
+    inputs:
+      notify_every_run:
+        description: "Send PushPlus summary even when no alert is triggered"
+        required: false
+        type: boolean
+        default: false
+  schedule:
+    - cron: "17 * * * *"
+      timezone: "Asia/Shanghai"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: flight-price-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Run monitor
+        env:
+          PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
+          PUSHPLUS_CHANNEL: wechat
+          PUSHPLUS_TEMPLATE: markdown
+        run: |
+          set -euo pipefail
+          args=(--json --notify)
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.notify_every_run }}" = "true" ]; then
+            args+=(--notify-every-run)
+          fi
+          python flight_monitor.py "${args[@]}"
+
+      - name: Commit state files
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add last_run.json state.json
+          if git diff --cached --quiet; then
+            echo "No state changes to commit."
+          else
+            git commit -m "Update flight monitor state"
+            git push
+          fi

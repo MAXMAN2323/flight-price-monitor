@@ -1,0 +1,36 @@
+{
+  "currency": "CNY",
+  "language": "zh-CN",
+  "state_file": "state.json",
+  "last_run_file": "last_run.json",
+  "max_results_per_query": 5,
+  "sleep_seconds_between_queries": 5.0,
+  "watches": [
+    {
+      "id": "beijing-thailand",
+      "label": "Beijing to Bangkok/Chiang Mai round trip",
+      "threshold_cny": 3000,
+      "origins": ["PEK", "PKX"],
+      "destinations": ["BKK", "DMK", "CNX"],
+      "outbound_dates": ["2026-09-25", "2026-09-26"],
+      "return_dates": ["2026-10-06", "2026-10-07"],
+      "sources": ["google_fast_flights"]
+    },
+    {
+      "id": "beijing-spain",
+      "label": "Beijing to Spain round trip",
+      "threshold_cny": 6000,
+      "origins": ["PEK", "PKX"],
+      "destinations": ["MAD", "BCN", "AGP", "VLC"],
+      "outbound_dates": ["2026-09-25", "2026-09-26"],
+      "return_dates": ["2026-10-06", "2026-10-07"],
+      "sources": ["google_fast_flights"]
+    }
+  ],
+  "source_notes": {
+    "google_fast_flights": "Verified in this workspace. Uses Google Flights data through fast-flights, no API key.",
+    "ctrip_tripcom": "Probed but not enabled. Ctrip/Trip.com returned WhaleGuard block in headless and CDP-driven Chrome.",
+    "kayak_momondo": "Probed but not enabled. Static page loads; result polling API needs front-end metadata and browser runs redirect to bot page.",
+    "paid_api_ready": "The monitor can be extended to SerpApi/SearchApi/Travelpayouts/Amadeus if an API key is supplied."
+  }
+}
