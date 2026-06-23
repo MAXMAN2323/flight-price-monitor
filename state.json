@@ -1,0 +1,54 @@
+{
+  "routes": {
+    "google_fast_flights|beijing-thailand|PKX|BKK|2026-09-25|2026-10-06": {
+      "last_seen_price_cny": 5100,
+      "last_seen_at": "2026-06-23T16:47:11.328989+00:00",
+      "below_threshold": false
+    },
+    "google_fast_flights|beijing-thailand|PKX|BKK|2026-09-25|2026-10-07": {
+      "last_seen_price_cny": 5085,
+      "last_seen_at": "2026-06-23T16:47:11.329016+00:00",
+      "below_threshold": false
+    },
+    "google_fast_flights|beijing-thailand|PKX|BKK|2026-09-26|2026-10-07": {
+      "last_seen_price_cny": 4675,
+      "last_seen_at": "2026-06-23T16:47:11.329020+00:00",
+      "below_threshold": false
+    },
+    "google_fast_flights|beijing-thailand|PKX|CNX|2026-09-25|2026-10-06": {
+      "last_seen_price_cny": 5580,
+      "last_seen_at": "2026-06-23T16:47:11.329023+00:00",
+      "below_threshold": false
+    },
+    "google_fast_flights|beijing-thailand|PKX|CNX|2026-09-25|2026-10-07": {
+      "last_seen_price_cny": 5055,
+      "last_seen_at": "2026-06-23T16:47:11.329025+00:00",
+      "below_threshold": false
+    },
+    "google_fast_flights|beijing-thailand|PKX|CNX|2026-09-26|2026-10-06": {
+      "last_seen_price_cny": 5214,
+      "last_seen_at": "2026-06-23T16:47:11.329027+00:00",
+      "below_threshold": false
+    },
+    "google_fast_flights|beijing-thailand|PKX|CNX|2026-09-26|2026-10-07": {
+      "last_seen_price_cny": 4689,
+      "last_seen_at": "2026-06-23T16:47:11.329029+00:00",
+      "below_threshold": false
+    },
+    "google_fast_flights|beijing-spain|PEK|BCN|2026-09-25|2026-10-06": {
+      "last_seen_price_cny": 44825,
+      "last_seen_at": "2026-06-23T16:47:11.329038+00:00",
+      "below_threshold": false
+    },
+    "google_fast_flights|beijing-spain|PEK|BCN|2026-09-25|2026-10-07": {
+      "last_seen_price_cny": 44762,
+      "last_seen_at": "2026-06-23T16:47:11.329042+00:00",
+      "below_threshold": false
+    },
+    "google_fast_flights|beijing-spain|PEK|BCN|2026-09-26|2026-10-07": {
+      "last_seen_price_cny": 12305,
+      "last_seen_at": "2026-06-23T16:47:11.329046+00:00",
+      "below_threshold": false
+    }
+  }
+}
