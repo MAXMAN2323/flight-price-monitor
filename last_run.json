@@ -1,36 +1,11 @@
 {
-  "checked_at": "2026-06-24T08:39:09.920138+00:00",
+  "checked_at": "2026-06-24T12:07:02.810966+00:00",
   "query_count": 56,
   "candidate_count": 0,
   "alert_count": 0,
   "alerts": [],
-  "health_alert_count": 1,
-  "health_alerts": [
-    {
-      "type": "source_full_failure",
-      "source": "google_fast_flights",
-      "status": "failed",
-      "checked_at": "2026-06-24T08:39:09.920138+00:00",
-      "streak_started_at": "2026-06-24T02:19:58.197745+00:00",
-      "consecutive_failures": 3,
-      "failure_threshold": 3,
-      "reminder_interval": 6,
-      "query_count": 56,
-      "candidate_count": 0,
-      "error_count": 56,
-      "error_ratio": 1.0,
-      "error_summary": [
-        {
-          "count": 54,
-          "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
-        },
-        {
-          "count": 2,
-          "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
-        }
-      ]
-    }
-  ],
+  "health_alert_count": 0,
+  "health_alerts": [],
   "source_health": {
     "status": "failed",
     "full_run": true,
@@ -39,7 +14,7 @@
     "candidate_count": 0,
     "error_count": 56,
     "error_ratio": 1.0,
-    "consecutive_failures": 3,
+    "consecutive_failures": 4,
     "failure_threshold": 3,
     "reminder_interval": 6
   },
@@ -134,7 +109,7 @@
       "destination": "CNX",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
     },
     {
       "source": "google_fast_flights",
@@ -143,7 +118,7 @@
       "destination": "CNX",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
     },
     {
       "source": "google_fast_flights",
@@ -557,13 +532,5 @@
     "kayak_momondo": "Probed but not enabled. Static page loads; result polling API needs front-end metadata and browser runs redirect to bot page.",
     "paid_api_ready": "The monitor can be extended to SerpApi/SearchApi/Travelpayouts/Amadeus if an API key is supplied."
   },
-  "notification_results": [
-    {
-      "channel": "pushplus",
-      "status": "sent",
-      "code": 200,
-      "data": "74ae708c955446e0a0f3b6b5f2948ed4"
-    }
-  ],
-  "health_state_update": "health alert marker saved after notification was sent"
+  "notification_results": []
 }
