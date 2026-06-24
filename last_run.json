@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-06-24T15:18:29.592777+00:00",
+  "checked_at": "2026-06-24T17:25:51.746445+00:00",
   "query_count": 56,
   "candidate_count": 0,
   "alert_count": 0,
@@ -14,7 +14,7 @@
     "candidate_count": 0,
     "error_count": 56,
     "error_ratio": 1.0,
-    "consecutive_failures": 5,
+    "consecutive_failures": 6,
     "failure_threshold": 3,
     "reminder_interval": 6
   },
@@ -451,7 +451,7 @@
       "destination": "BCN",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
     },
     {
       "source": "google_fast_flights",
