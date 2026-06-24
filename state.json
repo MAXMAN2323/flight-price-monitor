@@ -49,19 +49,23 @@
       "last_seen_price_cny": 37970,
       "last_seen_at": "2026-06-23T21:56:31.140925+00:00",
       "below_threshold": false
+    },
+    "google_fast_flights|beijing-spain|PEK|MAD|2026-09-26|2026-10-06": {
+      "last_seen_price_cny": 44996,
+      "last_seen_at": "2026-06-24T23:39:50.436188+00:00",
+      "below_threshold": false
     }
   },
   "source_health": {
-    "streak_started_at": "2026-06-24T02:19:58.197745+00:00",
-    "consecutive_failures": 8,
+    "consecutive_failures": 0,
     "last_failure_at": "2026-06-24T21:52:02.966031+00:00",
-    "last_checked_at": "2026-06-24T21:52:02.966031+00:00",
-    "last_status": "failed",
+    "last_checked_at": "2026-06-24T23:39:50.436140+00:00",
+    "last_status": "degraded",
     "last_query_count": 56,
-    "last_candidate_count": 0,
-    "last_error_count": 56,
-    "last_error_ratio": 1.0,
-    "last_alert_failure_count": 3,
-    "last_alert_at": "2026-06-24T08:39:10.863571+00:00"
+    "last_candidate_count": 3,
+    "last_error_count": 55,
+    "last_error_ratio": 0.9821,
+    "last_alert_at": "2026-06-24T08:39:10.863571+00:00",
+    "last_success_at": "2026-06-24T23:39:50.436140+00:00"
   }
 }
