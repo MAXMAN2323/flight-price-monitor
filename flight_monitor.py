@@ -7,6 +7,7 @@ import sys
 import time
 import urllib.error
 import urllib.request
+from collections import Counter
 from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -17,6 +18,10 @@ ROOT = Path(__file__).resolve().parent
 VENDOR = ROOT / "vendor"
 if VENDOR.exists():
     sys.path.insert(0, str(VENDOR))
+
+DEFAULT_HEALTH_FAILURE_THRESHOLD = 3
+DEFAULT_HEALTH_REMINDER_INTERVAL = 6
+DEFAULT_HEALTH_FAILURE_ERROR_RATIO = 0.9
 
 
 @dataclass
@@ -66,6 +71,11 @@ def resolve_last_run_path(config_path: Path) -> Path:
     return config_path.parent / config.get("last_run_file", "last_run.json")
 
 
+def resolve_state_path(config_path: Path) -> Path:
+    config = load_json(config_path, {})
+    return config_path.parent / config.get("state_file", "state.json")
+
+
 def format_notification_text(payload: dict[str, Any]) -> str:
     lines = [
         f"checked_at={payload['checked_at']}",
@@ -82,6 +92,14 @@ def format_notification_text(payload: dict[str, Any]) -> str:
                 f"{alert['outbound_date']}/{alert['return_date']} "
                 f"CNY {alert['price_cny']} < {alert['threshold_cny']}"
             )
+    elif payload.get("health_alerts"):
+        lines.append("health_alerts:")
+        for alert in payload["health_alerts"]:
+            lines.append(
+                "- "
+                f"{alert['type']} consecutive_failures={alert['consecutive_failures']} "
+                f"query_count={alert['query_count']} error_count={alert['error_count']}"
+            )
     elif payload.get("best_by_watch"):
         lines.append("best_by_watch:")
         for watch_id, best in payload["best_by_watch"].items():
@@ -97,7 +115,7 @@ def format_notification_text(payload: dict[str, Any]) -> str:
 
 
 def send_webhook_notification(payload: dict[str, Any], *, force: bool = False) -> list[dict[str, Any]]:
-    if not payload.get("alerts") and not force:
+    if not payload.get("alerts") and not payload.get("health_alerts") and not force:
         return []
 
     url = os.environ.get("FLIGHT_MONITOR_WEBHOOK_URL", "").strip()
@@ -110,8 +128,15 @@ def send_webhook_notification(payload: dict[str, Any], *, force: bool = False) -
             }
         ]
 
+    if payload.get("alerts"):
+        title = "Flight price monitor alert"
+    elif payload.get("health_alerts"):
+        title = "Flight monitor data source alert"
+    else:
+        title = "Flight price monitor summary"
+
     body = {
-        "title": "Flight price monitor alert" if payload.get("alerts") else "Flight price monitor summary",
+        "title": title,
         "text": format_notification_text(payload),
         "payload": payload,
     }
@@ -177,6 +202,24 @@ def format_pushplus_content(payload: dict[str, Any]) -> str:
             )
             if alert.get("url"):
                 lines.append(f"- url: {alert['url']}")
+    elif payload.get("health_alerts"):
+        lines.extend(["", "## Data source health alert"])
+        for alert in payload["health_alerts"]:
+            lines.extend(
+                [
+                    "",
+                    f"- type: `{alert['type']}`",
+                    f"- source: `{alert['source']}`",
+                    f"- status: `{alert['status']}`",
+                    f"- consecutive_failures: `{alert['consecutive_failures']}`",
+                    f"- query_count: `{alert['query_count']}`",
+                    f"- candidate_count: `{alert['candidate_count']}`",
+                    f"- error_count: `{alert['error_count']}`",
+                    f"- first_failed_at: `{alert.get('streak_started_at') or ''}`",
+                ]
+            )
+            for item in alert.get("error_summary", [])[:3]:
+                lines.append(f"- error x{item['count']}: `{item['error']}`")
     elif payload.get("best_by_watch"):
         lines.extend(["", "## Best by watch"])
         for watch_id, best in payload["best_by_watch"].items():
@@ -196,7 +239,7 @@ def format_pushplus_content(payload: dict[str, Any]) -> str:
 
 
 def send_pushplus_notification(payload: dict[str, Any], *, force: bool = False) -> list[dict[str, Any]]:
-    if not payload.get("alerts") and not force:
+    if not payload.get("alerts") and not payload.get("health_alerts") and not force:
         return []
 
     token = os.environ.get("PUSHPLUS_TOKEN", "").strip()
@@ -210,9 +253,16 @@ def send_pushplus_notification(payload: dict[str, Any], *, force: bool = False) 
         ]
 
     endpoint = os.environ.get("PUSHPLUS_ENDPOINT", "https://www.pushplus.plus/send").strip()
+    if payload.get("alerts"):
+        title = "Flight price alert"
+    elif payload.get("health_alerts"):
+        title = "Flight monitor data source alert"
+    else:
+        title = "Flight price summary"
+
     body = {
         "token": token,
-        "title": "Flight price alert" if payload.get("alerts") else "Flight price summary",
+        "title": title,
         "content": format_pushplus_content(payload),
         "template": os.environ.get("PUSHPLUS_TEMPLATE", "markdown").strip() or "markdown",
         "channel": os.environ.get("PUSHPLUS_CHANNEL", "wechat").strip() or "wechat",
@@ -300,8 +350,7 @@ def payload_candidate_key(candidate: dict[str, Any]) -> str:
 def rollback_alert_state(config_path: Path, alerts: list[dict[str, Any]]) -> None:
     if not alerts:
         return
-    config = load_json(config_path, {})
-    state_path = config_path.parent / config.get("state_file", "state.json")
+    state_path = resolve_state_path(config_path)
     state = load_json(state_path, {"routes": {}})
     routes = state.setdefault("routes", {})
     for alert in alerts:
@@ -311,6 +360,18 @@ def rollback_alert_state(config_path: Path, alerts: list[dict[str, Any]]) -> Non
         entry["below_threshold"] = False
         entry.pop("last_alert_price_cny", None)
         entry.pop("last_alert_at", None)
+    write_json(state_path, state)
+
+
+def mark_health_alert_sent(config_path: Path, health_alerts: list[dict[str, Any]]) -> None:
+    if not health_alerts:
+        return
+    state_path = resolve_state_path(config_path)
+    state = load_json(state_path, {"routes": {}})
+    source_health = state.setdefault("source_health", {})
+    max_failure_count = max(int(alert.get("consecutive_failures", 0)) for alert in health_alerts)
+    source_health["last_alert_failure_count"] = max_failure_count
+    source_health["last_alert_at"] = datetime.now(timezone.utc).isoformat()
     write_json(state_path, state)
 
 
@@ -419,6 +480,134 @@ def pick_alerts(
     return alerts
 
 
+def count_config_queries(config: dict[str, Any]) -> int:
+    total = 0
+    for watch in config["watches"]:
+        total += (
+            len(watch["origins"])
+            * len(watch["destinations"])
+            * len(watch["outbound_dates"])
+            * len(watch["return_dates"])
+        )
+    return total
+
+
+def summarize_errors(errors: list[dict[str, Any]], *, max_items: int = 3) -> list[dict[str, Any]]:
+    counts = Counter(str(error.get("error", "")) for error in errors)
+    return [
+        {"count": count, "error": message[:500]}
+        for message, count in counts.most_common(max_items)
+    ]
+
+
+def update_source_health(
+    *,
+    config: dict[str, Any],
+    state: dict[str, Any],
+    query_count: int,
+    candidate_count: int,
+    errors: list[dict[str, Any]],
+    checked_at: str,
+    limit_queries: int | None,
+) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    health_config = config.get("health_alerts", {})
+    failure_threshold = int(
+        health_config.get("consecutive_failure_threshold", DEFAULT_HEALTH_FAILURE_THRESHOLD)
+    )
+    reminder_interval = int(
+        health_config.get("reminder_failure_interval", DEFAULT_HEALTH_REMINDER_INTERVAL)
+    )
+    failure_error_ratio = float(
+        health_config.get("full_failure_error_ratio", DEFAULT_HEALTH_FAILURE_ERROR_RATIO)
+    )
+
+    expected_query_count = count_config_queries(config)
+    error_count = len(errors)
+    full_run = limit_queries is None and query_count == expected_query_count
+    error_ratio = (error_count / query_count) if query_count else 0.0
+    full_failure = full_run and candidate_count == 0 and error_ratio >= failure_error_ratio
+
+    source_health = state.setdefault("source_health", {})
+    if not full_run:
+        health = {
+            "status": "skipped_limited_run",
+            "full_run": False,
+            "expected_query_count": expected_query_count,
+            "query_count": query_count,
+            "candidate_count": candidate_count,
+            "error_count": error_count,
+            "error_ratio": round(error_ratio, 4),
+        }
+        source_health["last_checked_at"] = checked_at
+        source_health["last_status"] = health["status"]
+        return health, []
+
+    if full_failure:
+        consecutive_failures = int(source_health.get("consecutive_failures", 0)) + 1
+        if consecutive_failures == 1:
+            source_health["streak_started_at"] = checked_at
+        source_health["consecutive_failures"] = consecutive_failures
+        source_health["last_failure_at"] = checked_at
+        status = "failed"
+    else:
+        consecutive_failures = 0
+        source_health["consecutive_failures"] = 0
+        source_health["last_success_at"] = checked_at
+        source_health.pop("streak_started_at", None)
+        source_health.pop("last_alert_failure_count", None)
+        status = "degraded" if error_ratio >= failure_error_ratio else "healthy"
+
+    source_health["last_checked_at"] = checked_at
+    source_health["last_status"] = status
+    source_health["last_query_count"] = query_count
+    source_health["last_candidate_count"] = candidate_count
+    source_health["last_error_count"] = error_count
+    source_health["last_error_ratio"] = round(error_ratio, 4)
+
+    health = {
+        "status": status,
+        "full_run": True,
+        "expected_query_count": expected_query_count,
+        "query_count": query_count,
+        "candidate_count": candidate_count,
+        "error_count": error_count,
+        "error_ratio": round(error_ratio, 4),
+        "consecutive_failures": consecutive_failures,
+        "failure_threshold": failure_threshold,
+        "reminder_interval": reminder_interval,
+    }
+
+    health_alerts: list[dict[str, Any]] = []
+    last_alert_failure_count = source_health.get("last_alert_failure_count")
+    should_alert = False
+    if full_failure and consecutive_failures >= failure_threshold:
+        if not isinstance(last_alert_failure_count, int):
+            should_alert = True
+        elif consecutive_failures - last_alert_failure_count >= reminder_interval:
+            should_alert = True
+
+    if should_alert:
+        health_alerts.append(
+            {
+                "type": "source_full_failure",
+                "source": "google_fast_flights",
+                "status": status,
+                "checked_at": checked_at,
+                "streak_started_at": source_health.get("streak_started_at"),
+                "consecutive_failures": consecutive_failures,
+                "failure_threshold": failure_threshold,
+                "reminder_interval": reminder_interval,
+                "query_count": query_count,
+                "candidate_count": candidate_count,
+                "error_count": error_count,
+                "error_ratio": round(error_ratio, 4),
+                "error_summary": summarize_errors(errors),
+            }
+        )
+
+    return health, health_alerts
+
+
 def run(config_path: Path, *, limit_queries: int | None = None, no_state_update: bool = False) -> dict[str, Any]:
     config = load_json(config_path, {})
     state_path = config_path.parent / config.get("state_file", "state.json")
@@ -478,13 +667,26 @@ def run(config_path: Path, *, limit_queries: int | None = None, no_state_update:
     for candidate in sorted(candidates, key=lambda x: x.price_cny):
         best_by_watch.setdefault(candidate.watch_id, asdict(candidate))
 
+    checked_at = datetime.now(timezone.utc).isoformat()
     alerts = pick_alerts(candidates=candidates, thresholds=thresholds, state=state)
+    source_health, health_alerts = update_source_health(
+        config=config,
+        state=state,
+        query_count=query_count,
+        candidate_count=len(candidates),
+        errors=errors,
+        checked_at=checked_at,
+        limit_queries=limit_queries,
+    )
     payload = {
-        "checked_at": datetime.now(timezone.utc).isoformat(),
+        "checked_at": checked_at,
         "query_count": query_count,
         "candidate_count": len(candidates),
         "alert_count": len(alerts),
         "alerts": alerts,
+        "health_alert_count": len(health_alerts),
+        "health_alerts": health_alerts,
+        "source_health": source_health,
         "best_by_watch": best_by_watch,
         "candidates": [asdict(x) for x in sorted(candidates, key=lambda x: x.price_cny)],
         "errors": errors,
@@ -521,6 +723,9 @@ def main() -> int:
         if payload["alerts"] and not notification_was_sent(payload["notification_results"]):
             rollback_alert_state(config_path, payload["alerts"])
             payload["state_update"] = "alert markers rolled back because notification was not sent"
+        if payload.get("health_alerts") and notification_was_sent(payload["notification_results"]):
+            mark_health_alert_sent(config_path, payload["health_alerts"])
+            payload["health_state_update"] = "health alert marker saved after notification was sent"
         write_json(resolve_last_run_path(config_path), payload)
     if args.json:
         print(json.dumps(payload, ensure_ascii=False, indent=2))
@@ -529,6 +734,8 @@ def main() -> int:
         print(f"query_count={payload['query_count']}")
         print(f"candidate_count={payload['candidate_count']}")
         print(f"alert_count={payload['alert_count']}")
+        print(f"health_alert_count={payload['health_alert_count']}")
+        print(f"source_health_status={payload['source_health']['status']}")
         for watch_id, best in payload["best_by_watch"].items():
             print(
                 "best "

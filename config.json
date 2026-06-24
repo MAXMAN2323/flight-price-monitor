@@ -5,6 +5,11 @@
   "last_run_file": "last_run.json",
   "max_results_per_query": 5,
   "sleep_seconds_between_queries": 5.0,
+  "health_alerts": {
+    "consecutive_failure_threshold": 3,
+    "reminder_failure_interval": 6,
+    "full_failure_error_ratio": 0.9
+  },
   "watches": [
     {
       "id": "beijing-thailand",
