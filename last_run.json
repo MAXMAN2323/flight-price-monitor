@@ -1,9 +1,23 @@
 {
-  "checked_at": "2026-06-24T02:03:48.201026+00:00",
+  "checked_at": "2026-06-24T02:19:58.197745+00:00",
   "query_count": 56,
   "candidate_count": 0,
   "alert_count": 0,
   "alerts": [],
+  "health_alert_count": 0,
+  "health_alerts": [],
+  "source_health": {
+    "status": "failed",
+    "full_run": true,
+    "expected_query_count": 56,
+    "query_count": 56,
+    "candidate_count": 0,
+    "error_count": 56,
+    "error_ratio": 1.0,
+    "consecutive_failures": 1,
+    "failure_threshold": 3,
+    "reminder_interval": 6
+  },
   "best_by_watch": {},
   "candidates": [],
   "errors": [

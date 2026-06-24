@@ -50,5 +50,16 @@
       "last_seen_at": "2026-06-23T21:56:31.140925+00:00",
       "below_threshold": false
     }
+  },
+  "source_health": {
+    "streak_started_at": "2026-06-24T02:19:58.197745+00:00",
+    "consecutive_failures": 1,
+    "last_failure_at": "2026-06-24T02:19:58.197745+00:00",
+    "last_checked_at": "2026-06-24T02:19:58.197745+00:00",
+    "last_status": "failed",
+    "last_query_count": 56,
+    "last_candidate_count": 0,
+    "last_error_count": 56,
+    "last_error_ratio": 1.0
   }
 }
