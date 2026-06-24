@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-06-24T01:23:15.766786+00:00",
+  "checked_at": "2026-06-24T02:03:48.201026+00:00",
   "query_count": 56,
   "candidate_count": 0,
   "alert_count": 0,
@@ -518,12 +518,5 @@
     "kayak_momondo": "Probed but not enabled. Static page loads; result polling API needs front-end metadata and browser runs redirect to bot page.",
     "paid_api_ready": "The monitor can be extended to SerpApi/SearchApi/Travelpayouts/Amadeus if an API key is supplied."
   },
-  "notification_results": [
-    {
-      "channel": "pushplus",
-      "status": "sent",
-      "code": 200,
-      "data": "862c054cd92548e49fe08137f143ddab"
-    }
-  ]
+  "notification_results": []
 }
