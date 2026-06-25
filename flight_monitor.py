@@ -21,7 +21,8 @@ if VENDOR.exists():
 
 DEFAULT_HEALTH_FAILURE_THRESHOLD = 3
 DEFAULT_HEALTH_REMINDER_INTERVAL = 6
-DEFAULT_HEALTH_FAILURE_ERROR_RATIO = 0.9
+DEFAULT_HEALTH_UNHEALTHY_ERROR_RATIO = 0.9
+DEFAULT_HEALTH_MIN_SUCCESSFUL_CANDIDATES = 5
 
 
 @dataclass
@@ -76,6 +77,11 @@ def resolve_state_path(config_path: Path) -> Path:
     return config_path.parent / config.get("state_file", "state.json")
 
 
+def resolve_history_path(config_path: Path) -> Path:
+    config = load_json(config_path, {})
+    return config_path.parent / config.get("history_file", "history.jsonl")
+
+
 def format_notification_text(payload: dict[str, Any]) -> str:
     lines = [
         f"checked_at={payload['checked_at']}",
@@ -97,7 +103,7 @@ def format_notification_text(payload: dict[str, Any]) -> str:
         for alert in payload["health_alerts"]:
             lines.append(
                 "- "
-                f"{alert['type']} consecutive_failures={alert['consecutive_failures']} "
+                f"{alert['type']} consecutive_unhealthy_runs={alert['consecutive_failures']} "
                 f"query_count={alert['query_count']} error_count={alert['error_count']}"
             )
     elif payload.get("best_by_watch"):
@@ -211,7 +217,7 @@ def format_pushplus_content(payload: dict[str, Any]) -> str:
                     f"- type: `{alert['type']}`",
                     f"- source: `{alert['source']}`",
                     f"- status: `{alert['status']}`",
-                    f"- consecutive_failures: `{alert['consecutive_failures']}`",
+                    f"- consecutive_unhealthy_runs: `{alert['consecutive_failures']}`",
                     f"- query_count: `{alert['query_count']}`",
                     f"- candidate_count: `{alert['candidate_count']}`",
                     f"- error_count: `{alert['error_count']}`",
@@ -517,15 +523,21 @@ def update_source_health(
     reminder_interval = int(
         health_config.get("reminder_failure_interval", DEFAULT_HEALTH_REMINDER_INTERVAL)
     )
-    failure_error_ratio = float(
-        health_config.get("full_failure_error_ratio", DEFAULT_HEALTH_FAILURE_ERROR_RATIO)
+    unhealthy_error_ratio = float(
+        health_config.get("unhealthy_error_ratio", DEFAULT_HEALTH_UNHEALTHY_ERROR_RATIO)
+    )
+    min_successful_candidates = int(
+        health_config.get("min_successful_candidates", DEFAULT_HEALTH_MIN_SUCCESSFUL_CANDIDATES)
     )
 
     expected_query_count = count_config_queries(config)
     error_count = len(errors)
     full_run = limit_queries is None and query_count == expected_query_count
     error_ratio = (error_count / query_count) if query_count else 0.0
-    full_failure = full_run and candidate_count == 0 and error_ratio >= failure_error_ratio
+    no_candidates = candidate_count == 0
+    too_few_candidates = candidate_count < min_successful_candidates
+    high_error_rate = error_ratio >= unhealthy_error_ratio
+    unhealthy_run = full_run and (no_candidates or too_few_candidates or high_error_rate)
 
     source_health = state.setdefault("source_health", {})
     if not full_run:
@@ -542,20 +554,20 @@ def update_source_health(
         source_health["last_status"] = health["status"]
         return health, []
 
-    if full_failure:
+    if unhealthy_run:
         consecutive_failures = int(source_health.get("consecutive_failures", 0)) + 1
         if consecutive_failures == 1:
             source_health["streak_started_at"] = checked_at
         source_health["consecutive_failures"] = consecutive_failures
         source_health["last_failure_at"] = checked_at
-        status = "failed"
+        status = "failed" if no_candidates else "degraded"
     else:
         consecutive_failures = 0
         source_health["consecutive_failures"] = 0
         source_health["last_success_at"] = checked_at
         source_health.pop("streak_started_at", None)
         source_health.pop("last_alert_failure_count", None)
-        status = "degraded" if error_ratio >= failure_error_ratio else "healthy"
+        status = "healthy"
 
     source_health["last_checked_at"] = checked_at
     source_health["last_status"] = status
@@ -572,6 +584,10 @@ def update_source_health(
         "candidate_count": candidate_count,
         "error_count": error_count,
         "error_ratio": round(error_ratio, 4),
+        "min_successful_candidates": min_successful_candidates,
+        "unhealthy_error_ratio": unhealthy_error_ratio,
+        "too_few_candidates": too_few_candidates,
+        "high_error_rate": high_error_rate,
         "consecutive_failures": consecutive_failures,
         "failure_threshold": failure_threshold,
         "reminder_interval": reminder_interval,
@@ -580,7 +596,7 @@ def update_source_health(
     health_alerts: list[dict[str, Any]] = []
     last_alert_failure_count = source_health.get("last_alert_failure_count")
     should_alert = False
-    if full_failure and consecutive_failures >= failure_threshold:
+    if unhealthy_run and consecutive_failures >= failure_threshold:
         if not isinstance(last_alert_failure_count, int):
             should_alert = True
         elif consecutive_failures - last_alert_failure_count >= reminder_interval:
@@ -589,7 +605,7 @@ def update_source_health(
     if should_alert:
         health_alerts.append(
             {
-                "type": "source_full_failure",
+                "type": "source_unhealthy",
                 "source": "google_fast_flights",
                 "status": status,
                 "checked_at": checked_at,
@@ -601,11 +617,55 @@ def update_source_health(
                 "candidate_count": candidate_count,
                 "error_count": error_count,
                 "error_ratio": round(error_ratio, 4),
+                "min_successful_candidates": min_successful_candidates,
+                "unhealthy_error_ratio": unhealthy_error_ratio,
+                "too_few_candidates": too_few_candidates,
+                "high_error_rate": high_error_rate,
                 "error_summary": summarize_errors(errors),
             }
         )
 
     return health, health_alerts
+
+
+def build_history_row(payload: dict[str, Any]) -> dict[str, Any]:
+    notification_results = payload.get("notification_results") or []
+    return {
+        "checked_at": payload.get("checked_at"),
+        "query_count": payload.get("query_count"),
+        "candidate_count": payload.get("candidate_count"),
+        "error_count": len(payload.get("errors") or []),
+        "alert_count": payload.get("alert_count"),
+        "health_alert_count": payload.get("health_alert_count"),
+        "source_health_status": (payload.get("source_health") or {}).get("status"),
+        "consecutive_unhealthy_runs": (payload.get("source_health") or {}).get("consecutive_failures"),
+        "best_by_watch": {
+            watch_id: {
+                "origin": best.get("origin"),
+                "destination": best.get("destination"),
+                "outbound_date": best.get("outbound_date"),
+                "return_date": best.get("return_date"),
+                "price_cny": best.get("price_cny"),
+                "airlines": best.get("airlines") or [],
+            }
+            for watch_id, best in (payload.get("best_by_watch") or {}).items()
+        },
+        "notification_results": [
+            {
+                "channel": result.get("channel"),
+                "status": result.get("status"),
+                "code": result.get("code"),
+                "http_status": result.get("http_status"),
+            }
+            for result in notification_results
+        ],
+    }
+
+
+def append_history(config_path: Path, payload: dict[str, Any]) -> None:
+    history_path = resolve_history_path(config_path)
+    with history_path.open("a", encoding="utf-8", newline="\n") as handle:
+        handle.write(json.dumps(build_history_row(payload), ensure_ascii=False) + "\n")
 
 
 def run(config_path: Path, *, limit_queries: int | None = None, no_state_update: bool = False) -> dict[str, Any]:
@@ -727,6 +787,8 @@ def main() -> int:
             mark_health_alert_sent(config_path, payload["health_alerts"])
             payload["health_state_update"] = "health alert marker saved after notification was sent"
         write_json(resolve_last_run_path(config_path), payload)
+    if not args.no_state_update:
+        append_history(config_path, payload)
     if args.json:
         print(json.dumps(payload, ensure_ascii=False, indent=2))
     else:

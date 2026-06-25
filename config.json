@@ -3,20 +3,22 @@
   "language": "zh-CN",
   "state_file": "state.json",
   "last_run_file": "last_run.json",
+  "history_file": "history.jsonl",
   "max_results_per_query": 5,
   "sleep_seconds_between_queries": 5.0,
   "health_alerts": {
     "consecutive_failure_threshold": 3,
     "reminder_failure_interval": 6,
-    "full_failure_error_ratio": 0.9
+    "unhealthy_error_ratio": 0.9,
+    "min_successful_candidates": 5
   },
   "watches": [
     {
       "id": "beijing-thailand",
-      "label": "Beijing to Bangkok/Chiang Mai round trip",
+      "label": "Beijing to Bangkok sentinel round trip",
       "threshold_cny": 3000,
       "origins": ["PEK", "PKX"],
-      "destinations": ["BKK", "DMK", "CNX"],
+      "destinations": ["BKK", "DMK"],
       "outbound_dates": ["2026-09-25", "2026-09-26"],
       "return_dates": ["2026-10-06", "2026-10-07"],
       "sources": ["google_fast_flights"]
@@ -26,7 +28,7 @@
       "label": "Beijing to Spain round trip",
       "threshold_cny": 6000,
       "origins": ["PEK", "PKX"],
-      "destinations": ["MAD", "BCN", "AGP", "VLC"],
+      "destinations": ["MAD", "BCN"],
       "outbound_dates": ["2026-09-25", "2026-09-26"],
       "return_dates": ["2026-10-06", "2026-10-07"],
       "sources": ["google_fast_flights"]

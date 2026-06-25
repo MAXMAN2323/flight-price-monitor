@@ -9,8 +9,7 @@ on:
         type: boolean
         default: false
   schedule:
-    - cron: "17 * * * *"
-      timezone: "Asia/Shanghai"
+    - cron: "17 */3 * * *"
 
 permissions:
   contents: write
@@ -58,7 +57,7 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add last_run.json state.json
+          git add last_run.json state.json history.jsonl
           if git diff --cached --quiet; then
             echo "No state changes to commit."
           else
