@@ -57,9 +57,9 @@
     }
   },
   "source_health": {
-    "consecutive_failures": 1,
-    "last_failure_at": "2026-06-25T01:41:11.420171+00:00",
-    "last_checked_at": "2026-06-25T01:41:11.420171+00:00",
+    "consecutive_failures": 2,
+    "last_failure_at": "2026-06-25T07:00:26.938374+00:00",
+    "last_checked_at": "2026-06-25T07:00:26.938374+00:00",
     "last_status": "failed",
     "last_query_count": 32,
     "last_candidate_count": 0,
