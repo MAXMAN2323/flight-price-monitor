@@ -57,15 +57,16 @@
     }
   },
   "source_health": {
-    "consecutive_failures": 0,
-    "last_failure_at": "2026-06-24T21:52:02.966031+00:00",
-    "last_checked_at": "2026-06-24T23:39:50.436140+00:00",
-    "last_status": "degraded",
-    "last_query_count": 56,
-    "last_candidate_count": 3,
-    "last_error_count": 55,
-    "last_error_ratio": 0.9821,
+    "consecutive_failures": 1,
+    "last_failure_at": "2026-06-25T01:41:11.420171+00:00",
+    "last_checked_at": "2026-06-25T01:41:11.420171+00:00",
+    "last_status": "failed",
+    "last_query_count": 32,
+    "last_candidate_count": 0,
+    "last_error_count": 32,
+    "last_error_ratio": 1.0,
     "last_alert_at": "2026-06-24T08:39:10.863571+00:00",
-    "last_success_at": "2026-06-24T23:39:50.436140+00:00"
+    "last_success_at": "2026-06-24T23:39:50.436140+00:00",
+    "streak_started_at": "2026-06-25T01:41:11.420171+00:00"
   }
 }
