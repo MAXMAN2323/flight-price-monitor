@@ -7,12 +7,12 @@
     },
     "google_fast_flights|beijing-thailand|PKX|BKK|2026-09-25|2026-10-07": {
       "last_seen_price_cny": 5085,
-      "last_seen_at": "2026-06-23T16:47:11.329016+00:00",
+      "last_seen_at": "2026-06-25T12:00:10.038137+00:00",
       "below_threshold": false
     },
     "google_fast_flights|beijing-thailand|PKX|BKK|2026-09-26|2026-10-07": {
       "last_seen_price_cny": 4675,
-      "last_seen_at": "2026-06-23T16:47:11.329020+00:00",
+      "last_seen_at": "2026-06-25T12:00:10.038147+00:00",
       "below_threshold": false
     },
     "google_fast_flights|beijing-thailand|PKX|CNX|2026-09-25|2026-10-06": {
@@ -36,8 +36,8 @@
       "below_threshold": false
     },
     "google_fast_flights|beijing-spain|PEK|BCN|2026-09-25|2026-10-06": {
-      "last_seen_price_cny": 44825,
-      "last_seen_at": "2026-06-23T16:47:11.329038+00:00",
+      "last_seen_price_cny": 40659,
+      "last_seen_at": "2026-06-25T12:00:10.038206+00:00",
       "below_threshold": false
     },
     "google_fast_flights|beijing-spain|PEK|BCN|2026-09-25|2026-10-07": {
@@ -46,27 +46,36 @@
       "below_threshold": false
     },
     "google_fast_flights|beijing-spain|PEK|BCN|2026-09-26|2026-10-07": {
-      "last_seen_price_cny": 37970,
-      "last_seen_at": "2026-06-23T21:56:31.140925+00:00",
+      "last_seen_price_cny": 37969,
+      "last_seen_at": "2026-06-25T12:00:10.038221+00:00",
       "below_threshold": false
     },
     "google_fast_flights|beijing-spain|PEK|MAD|2026-09-26|2026-10-06": {
+      "last_seen_price_cny": 38202,
+      "last_seen_at": "2026-06-25T12:00:10.038179+00:00",
+      "below_threshold": false
+    },
+    "google_fast_flights|beijing-spain|PEK|MAD|2026-09-25|2026-10-06": {
+      "last_seen_price_cny": 26394,
+      "last_seen_at": "2026-06-25T12:00:10.038166+00:00",
+      "below_threshold": false
+    },
+    "google_fast_flights|beijing-spain|PEK|MAD|2026-09-26|2026-10-07": {
       "last_seen_price_cny": 44996,
-      "last_seen_at": "2026-06-24T23:39:50.436188+00:00",
+      "last_seen_at": "2026-06-25T12:00:10.038191+00:00",
       "below_threshold": false
     }
   },
   "source_health": {
-    "consecutive_failures": 2,
+    "consecutive_failures": 0,
     "last_failure_at": "2026-06-25T07:00:26.938374+00:00",
-    "last_checked_at": "2026-06-25T07:00:26.938374+00:00",
-    "last_status": "failed",
+    "last_checked_at": "2026-06-25T12:00:10.038106+00:00",
+    "last_status": "healthy",
     "last_query_count": 32,
-    "last_candidate_count": 0,
-    "last_error_count": 32,
-    "last_error_ratio": 1.0,
+    "last_candidate_count": 25,
+    "last_error_count": 25,
+    "last_error_ratio": 0.7812,
     "last_alert_at": "2026-06-24T08:39:10.863571+00:00",
-    "last_success_at": "2026-06-24T23:39:50.436140+00:00",
-    "streak_started_at": "2026-06-25T01:41:11.420171+00:00"
+    "last_success_at": "2026-06-25T12:00:10.038106+00:00"
   }
 }
