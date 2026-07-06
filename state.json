@@ -2,12 +2,12 @@
   "routes": {
     "google_fast_flights|beijing-thailand|PKX|BKK|2026-09-25|2026-10-06": {
       "last_seen_price_cny": 5116,
-      "last_seen_at": "2026-07-06T11:09:45.792734+00:00",
+      "last_seen_at": "2026-07-06T15:58:56.325638+00:00",
       "below_threshold": false
     },
     "google_fast_flights|beijing-thailand|PKX|BKK|2026-09-25|2026-10-07": {
       "last_seen_price_cny": 4828,
-      "last_seen_at": "2026-07-06T11:09:45.792744+00:00",
+      "last_seen_at": "2026-07-06T15:58:56.325647+00:00",
       "below_threshold": false
     },
     "google_fast_flights|beijing-thailand|PKX|BKK|2026-09-26|2026-10-07": {
@@ -51,23 +51,23 @@
       "below_threshold": false
     },
     "google_fast_flights|beijing-spain|PEK|MAD|2026-09-26|2026-10-06": {
-      "last_seen_price_cny": 44997,
-      "last_seen_at": "2026-07-06T11:09:45.792809+00:00",
+      "last_seen_price_cny": 38693,
+      "last_seen_at": "2026-07-06T15:58:56.325701+00:00",
       "below_threshold": false
     },
     "google_fast_flights|beijing-spain|PEK|MAD|2026-09-25|2026-10-06": {
-      "last_seen_price_cny": 27474,
-      "last_seen_at": "2026-07-06T11:09:45.792781+00:00",
+      "last_seen_price_cny": 45055,
+      "last_seen_at": "2026-07-06T15:58:56.325681+00:00",
       "below_threshold": false
     },
     "google_fast_flights|beijing-spain|PEK|MAD|2026-09-26|2026-10-07": {
-      "last_seen_price_cny": 38203,
-      "last_seen_at": "2026-07-06T11:09:45.792820+00:00",
+      "last_seen_price_cny": 44997,
+      "last_seen_at": "2026-07-06T15:58:56.325713+00:00",
       "below_threshold": false
     },
     "google_fast_flights|beijing-spain|PEK|MAD|2026-09-25|2026-10-07": {
       "last_seen_price_cny": 45055,
-      "last_seen_at": "2026-07-06T11:09:45.792795+00:00",
+      "last_seen_at": "2026-07-06T15:58:56.325689+00:00",
       "below_threshold": false
     },
     "google_fast_flights|beijing-spain|PEK|BCN|2026-09-26|2026-10-06": {
@@ -77,20 +77,20 @@
     },
     "google_fast_flights|beijing-thailand|PKX|BKK|2026-09-26|2026-10-06": {
       "last_seen_price_cny": 4213,
-      "last_seen_at": "2026-07-06T11:09:45.792761+00:00",
+      "last_seen_at": "2026-07-06T15:58:56.325666+00:00",
       "below_threshold": false
     }
   },
   "source_health": {
     "consecutive_failures": 0,
     "last_failure_at": "2026-07-04T14:04:22.346622+00:00",
-    "last_checked_at": "2026-07-06T11:09:45.792700+00:00",
+    "last_checked_at": "2026-07-06T15:58:56.325605+00:00",
     "last_status": "healthy",
     "last_query_count": 32,
-    "last_candidate_count": 28,
-    "last_error_count": 24,
-    "last_error_ratio": 0.75,
+    "last_candidate_count": 23,
+    "last_error_count": 25,
+    "last_error_ratio": 0.7812,
     "last_alert_at": "2026-06-24T08:39:10.863571+00:00",
-    "last_success_at": "2026-07-06T11:09:45.792700+00:00"
+    "last_success_at": "2026-07-06T15:58:56.325605+00:00"
   }
 }
