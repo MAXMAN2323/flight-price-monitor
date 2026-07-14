@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-07-13T22:16:12.579039+00:00",
+  "checked_at": "2026-07-14T03:41:39.336453+00:00",
   "query_count": 32,
-  "candidate_count": 21,
+  "candidate_count": 20,
   "alert_count": 0,
   "alerts": [],
   "health_alert_count": 0,
@@ -11,7 +11,7 @@
     "full_run": true,
     "expected_query_count": 32,
     "query_count": 32,
-    "candidate_count": 21,
+    "candidate_count": 20,
     "error_count": 25,
     "error_ratio": 0.7812,
     "min_successful_candidates": 5,
@@ -272,7 +272,7 @@
       "watch_label": "Beijing to Spain round trip",
       "origin": "PEK",
       "destination": "MAD",
-      "outbound_date": "2026-09-26",
+      "outbound_date": "2026-09-25",
       "return_date": "2026-10-06",
       "price_cny": 40945,
       "airlines": [
@@ -281,23 +281,6 @@
         "Lufthansa City Airlines"
       ],
       "detail": "PEK-VIE; VIE-MUC; MUC-MAD",
-      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA2agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "watch_label": "Beijing to Spain round trip",
-      "origin": "PEK",
-      "destination": "MAD",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-06",
-      "price_cny": 40968,
-      "airlines": [
-        "国航",
-        "汉莎航空",
-        "Lufthansa City Airlines"
-      ],
-      "detail": "PEK-FRA; FRA-MUC; MUC-MAD",
       "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA2agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
     },
     {
@@ -325,12 +308,13 @@
       "destination": "MAD",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-06",
-      "price_cny": 40975,
+      "price_cny": 40968,
       "airlines": [
         "国航",
-        "汉莎航空"
+        "汉莎航空",
+        "Lufthansa City Airlines"
       ],
-      "detail": "PEK-MUC; MUC-FRA; FRA-MAD",
+      "detail": "PEK-FRA; FRA-MUC; MUC-MAD",
       "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA2agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
     },
     {
@@ -389,7 +373,7 @@
       "watch_label": "Beijing to Spain round trip",
       "origin": "PEK",
       "destination": "MAD",
-      "outbound_date": "2026-09-25",
+      "outbound_date": "2026-09-26",
       "return_date": "2026-10-06",
       "price_cny": 45047,
       "airlines": [
@@ -398,7 +382,7 @@
         "Lufthansa City Airlines"
       ],
       "detail": "PEK-VIE; VIE-MUC; MUC-MAD",
-      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA2agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA2agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
     }
   ],
   "errors": [
@@ -616,7 +600,7 @@
       "destination": "BCN",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+      "error": "google_fast_flights query failed: IndexError: list index out of range"
     },
     {
       "source": "google_fast_flights",
