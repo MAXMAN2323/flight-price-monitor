@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-07-19T10:47:56.030235+00:00",
+  "checked_at": "2026-07-19T13:58:59.667865+00:00",
   "query_count": 32,
-  "candidate_count": 25,
+  "candidate_count": 23,
   "alert_count": 0,
   "alerts": [],
   "health_alert_count": 0,
@@ -11,9 +11,9 @@
     "full_run": true,
     "expected_query_count": 32,
     "query_count": 32,
-    "candidate_count": 25,
-    "error_count": 24,
-    "error_ratio": 0.75,
+    "candidate_count": 23,
+    "error_count": 26,
+    "error_ratio": 0.8125,
     "min_successful_candidates": 5,
     "unhealthy_error_ratio": 0.9,
     "too_few_candidates": false,
@@ -146,36 +146,6 @@
       ],
       "detail": "PKX-HKG; HKG-BKK",
       "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEtYcgUSA0JLSxoaEgoyMDI2LTEwLTA3agUSA0JLS3IFEgNQS1hCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-thailand",
-      "watch_label": "Beijing to Bangkok sentinel round trip",
-      "origin": "PKX",
-      "destination": "BKK",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-06",
-      "price_cny": 4643,
-      "airlines": [
-        "香港快运航空"
-      ],
-      "detail": "PKX-HKG; HKG-BKK",
-      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEtYcgUSA0JLSxoaEgoyMDI2LTEwLTA2agUSA0JLS3IFEgNQS1hCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-thailand",
-      "watch_label": "Beijing to Bangkok sentinel round trip",
-      "origin": "PKX",
-      "destination": "BKK",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-07",
-      "price_cny": 4711,
-      "airlines": [
-        "香港快运航空"
-      ],
-      "detail": "PKX-HKG; HKG-BKK",
-      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEtYcgUSA0JLSxoaEgoyMDI2LTEwLTA3agUSA0JLS3IFEgNQS1hCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
     },
     {
       "source": "google_fast_flights",
@@ -482,7 +452,7 @@
       "destination": "BKK",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
     },
     {
       "source": "google_fast_flights",
@@ -491,7 +461,7 @@
       "destination": "BKK",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: IndexError: list index out of range"
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
     },
     {
       "source": "google_fast_flights",
@@ -500,7 +470,7 @@
       "destination": "BKK",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
     },
     {
       "source": "google_fast_flights",
@@ -509,7 +479,7 @@
       "destination": "DMK",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: IndexError: list index out of range"
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
     },
     {
       "source": "google_fast_flights",
@@ -536,7 +506,25 @@
       "destination": "DMK",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: IndexError: list index out of range"
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-thailand",
+      "origin": "PKX",
+      "destination": "BKK",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-06",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-thailand",
+      "origin": "PKX",
+      "destination": "BKK",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-07",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
     },
     {
       "source": "google_fast_flights",
@@ -545,7 +533,7 @@
       "destination": "DMK",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
     },
     {
       "source": "google_fast_flights",
@@ -554,7 +542,7 @@
       "destination": "DMK",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
     },
     {
       "source": "google_fast_flights",
@@ -572,7 +560,7 @@
       "destination": "DMK",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
     },
     {
       "source": "google_fast_flights",
@@ -653,7 +641,7 @@
       "destination": "BCN",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: IndexError: list index out of range"
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
     },
     {
       "source": "google_fast_flights",
