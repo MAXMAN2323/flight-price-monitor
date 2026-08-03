@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-03T20:03:29.796336+00:00",
+  "checked_at": "2026-08-03T22:30:52.624810+00:00",
   "query_count": 32,
   "candidate_count": 27,
   "alert_count": 0,
@@ -399,7 +399,7 @@
       "destination": "MAD",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-06",
-      "price_cny": 45043,
+      "price_cny": 40949,
       "airlines": [
         "国航",
         "奧地利航空",
@@ -673,7 +673,7 @@
       "destination": "MAD",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+      "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
     },
     {
       "source": "google_fast_flights",
@@ -691,7 +691,7 @@
       "destination": "BCN",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+      "error": "google_fast_flights query failed: IndexError: list index out of range"
     },
     {
       "source": "google_fast_flights",
