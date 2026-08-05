@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-05T20:00:08.157246+00:00",
+  "checked_at": "2026-08-05T22:31:49.391394+00:00",
   "query_count": 32,
   "candidate_count": 29,
   "alert_count": 0,
@@ -694,7 +694,7 @@
       "destination": "MAD",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
     },
     {
       "source": "google_fast_flights",
@@ -730,7 +730,7 @@
       "destination": "BCN",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: IndexError: list index out of range"
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
     },
     {
       "source": "google_fast_flights",
@@ -739,7 +739,7 @@
       "destination": "BCN",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: IndexError: list index out of range"
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
     }
   ],
   "source_notes": {
