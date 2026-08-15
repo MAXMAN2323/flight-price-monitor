@@ -2,17 +2,17 @@
   "routes": {
     "google_fast_flights|beijing-thailand|PKX|BKK|2026-09-25|2026-10-06": {
       "last_seen_price_cny": 5519,
-      "last_seen_at": "2026-08-15T15:40:41.208347+00:00",
+      "last_seen_at": "2026-08-15T18:51:49.778925+00:00",
       "below_threshold": false
     },
     "google_fast_flights|beijing-thailand|PKX|BKK|2026-09-25|2026-10-07": {
       "last_seen_price_cny": 5059,
-      "last_seen_at": "2026-08-15T15:40:41.208356+00:00",
+      "last_seen_at": "2026-08-15T18:51:49.778934+00:00",
       "below_threshold": false
     },
     "google_fast_flights|beijing-thailand|PKX|BKK|2026-09-26|2026-10-07": {
       "last_seen_price_cny": 4060,
-      "last_seen_at": "2026-08-15T15:40:41.208374+00:00",
+      "last_seen_at": "2026-08-15T18:51:49.778952+00:00",
       "below_threshold": false
     },
     "google_fast_flights|beijing-thailand|PKX|CNX|2026-09-25|2026-10-06": {
@@ -51,23 +51,23 @@
       "below_threshold": false
     },
     "google_fast_flights|beijing-spain|PEK|MAD|2026-09-26|2026-10-06": {
-      "last_seen_price_cny": 45043,
-      "last_seen_at": "2026-08-15T15:40:41.208412+00:00",
+      "last_seen_price_cny": 45623,
+      "last_seen_at": "2026-08-15T18:51:49.778990+00:00",
       "below_threshold": false
     },
     "google_fast_flights|beijing-spain|PEK|MAD|2026-09-25|2026-10-06": {
-      "last_seen_price_cny": 45682,
-      "last_seen_at": "2026-08-15T15:40:41.208383+00:00",
+      "last_seen_price_cny": 45102,
+      "last_seen_at": "2026-08-15T18:51:49.778961+00:00",
       "below_threshold": false
     },
     "google_fast_flights|beijing-spain|PEK|MAD|2026-09-26|2026-10-07": {
       "last_seen_price_cny": 33763,
-      "last_seen_at": "2026-08-15T15:40:41.208426+00:00",
+      "last_seen_at": "2026-08-15T18:51:49.779004+00:00",
       "below_threshold": false
     },
     "google_fast_flights|beijing-spain|PEK|MAD|2026-09-25|2026-10-07": {
       "last_seen_price_cny": 33809,
-      "last_seen_at": "2026-08-15T15:40:41.208398+00:00",
+      "last_seen_at": "2026-08-15T18:51:49.778976+00:00",
       "below_threshold": false
     },
     "google_fast_flights|beijing-spain|PEK|BCN|2026-09-26|2026-10-06": {
@@ -77,20 +77,20 @@
     },
     "google_fast_flights|beijing-thailand|PKX|BKK|2026-09-26|2026-10-06": {
       "last_seen_price_cny": 8629,
-      "last_seen_at": "2026-08-15T15:40:41.208371+00:00",
+      "last_seen_at": "2026-08-15T18:51:49.778949+00:00",
       "below_threshold": false
     }
   },
   "source_health": {
     "consecutive_failures": 0,
     "last_failure_at": "2026-08-08T19:04:02.366843+00:00",
-    "last_checked_at": "2026-08-15T15:40:41.208313+00:00",
+    "last_checked_at": "2026-08-15T18:51:49.778890+00:00",
     "last_status": "healthy",
     "last_query_count": 32,
     "last_candidate_count": 25,
     "last_error_count": 24,
     "last_error_ratio": 0.75,
     "last_alert_at": "2026-06-24T08:39:10.863571+00:00",
-    "last_success_at": "2026-08-15T15:40:41.208313+00:00"
+    "last_success_at": "2026-08-15T18:51:49.778890+00:00"
   }
 }
