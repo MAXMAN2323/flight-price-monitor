@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-17T15:45:49.593142+00:00",
+  "checked_at": "2026-08-17T19:02:53.530702+00:00",
   "query_count": 32,
   "candidate_count": 29,
   "alert_count": 0,
@@ -31,7 +31,7 @@
       "destination": "BKK",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-06",
-      "price_cny": 4138,
+      "price_cny": 4139,
       "airlines": [
         "南航"
       ],
@@ -44,16 +44,15 @@
       "watch_label": "Beijing to Spain round trip",
       "origin": "PEK",
       "destination": "MAD",
-      "outbound_date": "2026-09-25",
+      "outbound_date": "2026-09-26",
       "return_date": "2026-10-07",
-      "price_cny": 17168,
+      "price_cny": 27012,
       "airlines": [
-        "海航",
-        "神鹰航空",
-        "西班牙欧洲航空"
+        "国航",
+        "汉莎航空"
       ],
-      "detail": "PEK-BKK; BKK-FRA; FRA-MAD",
-      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA3agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+      "detail": "PEK-MUC; MUC-FRA; FRA-MAD",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA3agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
     }
   },
   "candidates": [
@@ -65,7 +64,7 @@
       "destination": "BKK",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-06",
-      "price_cny": 4138,
+      "price_cny": 4139,
       "airlines": [
         "南航"
       ],
@@ -125,7 +124,7 @@
       "destination": "BKK",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-06",
-      "price_cny": 4668,
+      "price_cny": 4669,
       "airlines": [
         "南航"
       ],
@@ -140,7 +139,7 @@
       "destination": "BKK",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-06",
-      "price_cny": 4668,
+      "price_cny": 4669,
       "airlines": [
         "南航"
       ],
@@ -213,56 +212,9 @@
       "watch_label": "Beijing to Spain round trip",
       "origin": "PEK",
       "destination": "MAD",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-07",
-      "price_cny": 17168,
-      "airlines": [
-        "海航",
-        "神鹰航空",
-        "西班牙欧洲航空"
-      ],
-      "detail": "PEK-BKK; BKK-FRA; FRA-MAD",
-      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA3agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "watch_label": "Beijing to Spain round trip",
-      "origin": "PEK",
-      "destination": "MAD",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-07",
-      "price_cny": 17237,
-      "airlines": [
-        "法航"
-      ],
-      "detail": "PEK-CDG; CDG-MAD",
-      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA3agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "watch_label": "Beijing to Spain round trip",
-      "origin": "PEK",
-      "destination": "MAD",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-07",
-      "price_cny": 17448,
-      "airlines": [
-        "法航"
-      ],
-      "detail": "PEK-CDG; CDG-MAD",
-      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA3agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "watch_label": "Beijing to Spain round trip",
-      "origin": "PEK",
-      "destination": "MAD",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-07",
-      "price_cny": 27009,
+      "price_cny": 27012,
       "airlines": [
         "国航",
         "汉莎航空"
@@ -278,7 +230,7 @@
       "destination": "MAD",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-07",
-      "price_cny": 27009,
+      "price_cny": 27012,
       "airlines": [
         "国航",
         "汉莎航空"
@@ -292,9 +244,43 @@
       "watch_label": "Beijing to Spain round trip",
       "origin": "PEK",
       "destination": "MAD",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-07",
+      "price_cny": 33766,
+      "airlines": [
+        "国航",
+        "奧地利航空",
+        "汉莎航空"
+      ],
+      "detail": "PEK-VIE; VIE-FRA; FRA-MAD",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA3agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "watch_label": "Beijing to Spain round trip",
+      "origin": "PEK",
+      "destination": "MAD",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-07",
+      "price_cny": 33766,
+      "airlines": [
+        "国航",
+        "奧地利航空",
+        "汉莎航空"
+      ],
+      "detail": "PEK-VIE; VIE-FRA; FRA-MAD",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA3agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "watch_label": "Beijing to Spain round trip",
+      "origin": "PEK",
+      "destination": "MAD",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-07",
-      "price_cny": 33763,
+      "price_cny": 33766,
       "airlines": [
         "国航",
         "奧地利航空",
@@ -311,7 +297,7 @@
       "destination": "MAD",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-07",
-      "price_cny": 33809,
+      "price_cny": 33812,
       "airlines": [
         "国航",
         "汉莎航空"
@@ -327,7 +313,23 @@
       "destination": "MAD",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-07",
-      "price_cny": 33809,
+      "price_cny": 33812,
+      "airlines": [
+        "国航",
+        "汉莎航空"
+      ],
+      "detail": "PEK-MUC; MUC-FRA; FRA-MAD",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA3agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "watch_label": "Beijing to Spain round trip",
+      "origin": "PEK",
+      "destination": "MAD",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-07",
+      "price_cny": 33812,
       "airlines": [
         "国航",
         "汉莎航空"
@@ -343,7 +345,7 @@
       "destination": "MAD",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-07",
-      "price_cny": 33822,
+      "price_cny": 33825,
       "airlines": [
         "国航",
         "汉莎航空",
@@ -360,7 +362,7 @@
       "destination": "MAD",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-07",
-      "price_cny": 33822,
+      "price_cny": 33825,
       "airlines": [
         "国航",
         "汉莎航空",
@@ -375,41 +377,9 @@
       "watch_label": "Beijing to Spain round trip",
       "origin": "PEK",
       "destination": "MAD",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-06",
-      "price_cny": 38279,
-      "airlines": [
-        "国航",
-        "汉莎航空"
-      ],
-      "detail": "PEK-MUC; MUC-FRA; FRA-MAD",
-      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA2agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "watch_label": "Beijing to Spain round trip",
-      "origin": "PEK",
-      "destination": "MAD",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-06",
-      "price_cny": 38279,
-      "airlines": [
-        "国航",
-        "汉莎航空"
-      ],
-      "detail": "PEK-MUC; MUC-FRA; FRA-MAD",
-      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA2agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "watch_label": "Beijing to Spain round trip",
-      "origin": "PEK",
-      "destination": "MAD",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-06",
-      "price_cny": 45043,
+      "price_cny": 45045,
       "airlines": [
         "国航",
         "奧地利航空",
@@ -426,7 +396,7 @@
       "destination": "MAD",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-06",
-      "price_cny": 45043,
+      "price_cny": 45045,
       "airlines": [
         "国航",
         "奧地利航空",
@@ -443,7 +413,7 @@
       "destination": "MAD",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-06",
-      "price_cny": 45043,
+      "price_cny": 45045,
       "airlines": [
         "国航",
         "奧地利航空",
@@ -458,9 +428,43 @@
       "watch_label": "Beijing to Spain round trip",
       "origin": "PEK",
       "destination": "MAD",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-06",
+      "price_cny": 45045,
+      "airlines": [
+        "国航",
+        "奧地利航空",
+        "汉莎航空"
+      ],
+      "detail": "PEK-VIE; VIE-FRA; FRA-MAD",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA2agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "watch_label": "Beijing to Spain round trip",
+      "origin": "PEK",
+      "destination": "MAD",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-06",
+      "price_cny": 45045,
+      "airlines": [
+        "国航",
+        "奧地利航空",
+        "汉莎航空"
+      ],
+      "detail": "PEK-VIE; VIE-FRA; FRA-MAD",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA2agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "watch_label": "Beijing to Spain round trip",
+      "origin": "PEK",
+      "destination": "MAD",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-06",
-      "price_cny": 45102,
+      "price_cny": 45104,
       "airlines": [
         "国航",
         "汉莎航空",
@@ -477,7 +481,7 @@
       "destination": "MAD",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-06",
-      "price_cny": 45102,
+      "price_cny": 45104,
       "airlines": [
         "国航",
         "汉莎航空",
@@ -494,7 +498,7 @@
       "destination": "MAD",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-06",
-      "price_cny": 45102,
+      "price_cny": 45104,
       "airlines": [
         "国航",
         "汉莎航空",
@@ -511,7 +515,7 @@
       "destination": "MAD",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-06",
-      "price_cny": 45102,
+      "price_cny": 45104,
       "airlines": [
         "国航",
         "汉莎航空",
@@ -538,7 +542,7 @@
       "destination": "BKK",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+      "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
     },
     {
       "source": "google_fast_flights",
@@ -556,178 +560,178 @@
       "destination": "BKK",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-07",
+      "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-thailand",
+      "origin": "PEK",
+      "destination": "DMK",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-06",
+      "error": "google_fast_flights query failed: IndexError: list index out of range"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-thailand",
+      "origin": "PEK",
+      "destination": "DMK",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-07",
+      "error": "google_fast_flights query failed: IndexError: list index out of range"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-thailand",
+      "origin": "PEK",
+      "destination": "DMK",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-06",
+      "error": "google_fast_flights query failed: IndexError: list index out of range"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-thailand",
+      "origin": "PEK",
+      "destination": "DMK",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-07",
+      "error": "google_fast_flights query failed: IndexError: list index out of range"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-thailand",
+      "origin": "PKX",
+      "destination": "DMK",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-06",
+      "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-thailand",
+      "origin": "PKX",
+      "destination": "DMK",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-07",
+      "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-thailand",
+      "origin": "PKX",
+      "destination": "DMK",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-06",
+      "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-thailand",
+      "origin": "PKX",
+      "destination": "DMK",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-07",
+      "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PEK",
+      "destination": "BCN",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-06",
+      "error": "google_fast_flights query failed: IndexError: list index out of range"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PEK",
+      "destination": "BCN",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-07",
       "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
     },
     {
       "source": "google_fast_flights",
-      "watch_id": "beijing-thailand",
+      "watch_id": "beijing-spain",
       "origin": "PEK",
-      "destination": "DMK",
-      "outbound_date": "2026-09-25",
+      "destination": "BCN",
+      "outbound_date": "2026-09-26",
       "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: IndexError: list index out of range"
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
     },
     {
       "source": "google_fast_flights",
-      "watch_id": "beijing-thailand",
+      "watch_id": "beijing-spain",
       "origin": "PEK",
-      "destination": "DMK",
+      "destination": "BCN",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-07",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PKX",
+      "destination": "MAD",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-06",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PKX",
+      "destination": "MAD",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-07",
+      "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PKX",
+      "destination": "MAD",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-06",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PKX",
+      "destination": "MAD",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-07",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PKX",
+      "destination": "BCN",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-06",
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "origin": "PKX",
+      "destination": "BCN",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-07",
       "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
     },
     {
       "source": "google_fast_flights",
-      "watch_id": "beijing-thailand",
-      "origin": "PEK",
-      "destination": "DMK",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: IndexError: list index out of range"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-thailand",
-      "origin": "PEK",
-      "destination": "DMK",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: IndexError: list index out of range"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-thailand",
-      "origin": "PKX",
-      "destination": "DMK",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-thailand",
-      "origin": "PKX",
-      "destination": "DMK",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-thailand",
-      "origin": "PKX",
-      "destination": "DMK",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-thailand",
-      "origin": "PKX",
-      "destination": "DMK",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PEK",
-      "destination": "BCN",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: IndexError: list index out of range"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PEK",
-      "destination": "BCN",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: IndexError: list index out of range"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PEK",
-      "destination": "BCN",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: IndexError: list index out of range"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PEK",
-      "destination": "BCN",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: IndexError: list index out of range"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PKX",
-      "destination": "MAD",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PKX",
-      "destination": "MAD",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PKX",
-      "destination": "MAD",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PKX",
-      "destination": "MAD",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PKX",
-      "destination": "BCN",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: IndexError: list index out of range"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PKX",
-      "destination": "BCN",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: IndexError: list index out of range"
-    },
-    {
-      "source": "google_fast_flights",
       "watch_id": "beijing-spain",
       "origin": "PKX",
       "destination": "BCN",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: IndexError: list index out of range"
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
     },
     {
       "source": "google_fast_flights",
