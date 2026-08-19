@@ -2,17 +2,17 @@
   "routes": {
     "google_fast_flights|beijing-thailand|PKX|BKK|2026-09-25|2026-10-06": {
       "last_seen_price_cny": 5699,
-      "last_seen_at": "2026-08-19T15:51:10.723089+00:00",
+      "last_seen_at": "2026-08-19T18:58:37.603228+00:00",
       "below_threshold": false
     },
     "google_fast_flights|beijing-thailand|PKX|BKK|2026-09-25|2026-10-07": {
       "last_seen_price_cny": 5407,
-      "last_seen_at": "2026-08-19T15:51:10.723096+00:00",
+      "last_seen_at": "2026-08-19T18:58:37.603237+00:00",
       "below_threshold": false
     },
     "google_fast_flights|beijing-thailand|PKX|BKK|2026-09-26|2026-10-07": {
       "last_seen_price_cny": 4577,
-      "last_seen_at": "2026-08-19T15:51:10.723110+00:00",
+      "last_seen_at": "2026-08-19T18:58:37.603256+00:00",
       "below_threshold": false
     },
     "google_fast_flights|beijing-thailand|PKX|CNX|2026-09-25|2026-10-06": {
@@ -56,18 +56,18 @@
       "below_threshold": false
     },
     "google_fast_flights|beijing-spain|PEK|MAD|2026-09-25|2026-10-06": {
-      "last_seen_price_cny": 45688,
-      "last_seen_at": "2026-08-19T15:51:10.723121+00:00",
+      "last_seen_price_cny": 45107,
+      "last_seen_at": "2026-08-19T18:58:37.603271+00:00",
       "below_threshold": false
     },
     "google_fast_flights|beijing-spain|PEK|MAD|2026-09-26|2026-10-07": {
-      "last_seen_price_cny": 33828,
-      "last_seen_at": "2026-08-19T15:51:10.723148+00:00",
+      "last_seen_price_cny": 33827,
+      "last_seen_at": "2026-08-19T18:58:37.603299+00:00",
       "below_threshold": false
     },
     "google_fast_flights|beijing-spain|PEK|MAD|2026-09-25|2026-10-07": {
       "last_seen_price_cny": 33814,
-      "last_seen_at": "2026-08-19T15:51:10.723131+00:00",
+      "last_seen_at": "2026-08-19T18:58:37.603285+00:00",
       "below_threshold": false
     },
     "google_fast_flights|beijing-spain|PEK|BCN|2026-09-26|2026-10-06": {
@@ -77,20 +77,20 @@
     },
     "google_fast_flights|beijing-thailand|PKX|BKK|2026-09-26|2026-10-06": {
       "last_seen_price_cny": 5411,
-      "last_seen_at": "2026-08-19T15:51:10.723108+00:00",
+      "last_seen_at": "2026-08-19T18:58:37.603253+00:00",
       "below_threshold": false
     }
   },
   "source_health": {
     "consecutive_failures": 0,
     "last_failure_at": "2026-08-18T13:16:54.681099+00:00",
-    "last_checked_at": "2026-08-19T15:51:10.723046+00:00",
+    "last_checked_at": "2026-08-19T18:58:37.603185+00:00",
     "last_status": "healthy",
     "last_query_count": 32,
-    "last_candidate_count": 29,
-    "last_error_count": 24,
-    "last_error_ratio": 0.75,
+    "last_candidate_count": 25,
+    "last_error_count": 25,
+    "last_error_ratio": 0.7812,
     "last_alert_at": "2026-06-24T08:39:10.863571+00:00",
-    "last_success_at": "2026-08-19T15:51:10.723046+00:00"
+    "last_success_at": "2026-08-19T18:58:37.603185+00:00"
   }
 }
