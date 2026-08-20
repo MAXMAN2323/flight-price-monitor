@@ -7,7 +7,7 @@
     },
     "google_fast_flights|beijing-thailand|PKX|BKK|2026-09-25|2026-10-07": {
       "last_seen_price_cny": 5227,
-      "last_seen_at": "2026-08-20T15:53:37.604049+00:00",
+      "last_seen_at": "2026-08-20T19:05:33.172071+00:00",
       "below_threshold": false
     },
     "google_fast_flights|beijing-thailand|PKX|BKK|2026-09-26|2026-10-07": {
@@ -51,8 +51,8 @@
       "below_threshold": false
     },
     "google_fast_flights|beijing-spain|PEK|MAD|2026-09-26|2026-10-06": {
-      "last_seen_price_cny": 45107,
-      "last_seen_at": "2026-08-20T15:53:37.604082+00:00",
+      "last_seen_price_cny": 45110,
+      "last_seen_at": "2026-08-20T19:05:33.172107+00:00",
       "below_threshold": false
     },
     "google_fast_flights|beijing-spain|PEK|MAD|2026-09-25|2026-10-06": {
@@ -66,8 +66,8 @@
       "below_threshold": false
     },
     "google_fast_flights|beijing-spain|PEK|MAD|2026-09-25|2026-10-07": {
-      "last_seen_price_cny": 29712,
-      "last_seen_at": "2026-08-20T15:53:37.604071+00:00",
+      "last_seen_price_cny": 33818,
+      "last_seen_at": "2026-08-20T19:05:33.172095+00:00",
       "below_threshold": false
     },
     "google_fast_flights|beijing-spain|PEK|BCN|2026-09-26|2026-10-06": {
@@ -82,15 +82,16 @@
     }
   },
   "source_health": {
-    "consecutive_failures": 0,
-    "last_failure_at": "2026-08-18T13:16:54.681099+00:00",
-    "last_checked_at": "2026-08-20T15:53:37.604007+00:00",
-    "last_status": "healthy",
+    "consecutive_failures": 1,
+    "last_failure_at": "2026-08-20T19:05:33.172037+00:00",
+    "last_checked_at": "2026-08-20T19:05:33.172037+00:00",
+    "last_status": "degraded",
     "last_query_count": 32,
-    "last_candidate_count": 17,
-    "last_error_count": 26,
-    "last_error_ratio": 0.8125,
+    "last_candidate_count": 10,
+    "last_error_count": 29,
+    "last_error_ratio": 0.9062,
     "last_alert_at": "2026-06-24T08:39:10.863571+00:00",
-    "last_success_at": "2026-08-20T15:53:37.604007+00:00"
+    "last_success_at": "2026-08-20T15:53:37.604007+00:00",
+    "streak_started_at": "2026-08-20T19:05:33.172037+00:00"
   }
 }
