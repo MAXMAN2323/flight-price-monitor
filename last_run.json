@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-21T21:45:01.622874+00:00",
+  "checked_at": "2026-08-22T01:55:23.667193+00:00",
   "query_count": 32,
   "candidate_count": 27,
   "alert_count": 0,
@@ -109,21 +109,6 @@
       "destination": "BKK",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-06",
-      "price_cny": 4671,
-      "airlines": [
-        "南航"
-      ],
-      "detail": "PKX-CAN; CAN-BKK",
-      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEtYcgUSA0JLSxoaEgoyMDI2LTEwLTA2agUSA0JLS3IFEgNQS1hCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-thailand",
-      "watch_label": "Beijing to Bangkok sentinel round trip",
-      "origin": "PKX",
-      "destination": "BKK",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-06",
       "price_cny": 4672,
       "airlines": [
         "南航"
@@ -139,11 +124,11 @@
       "destination": "BKK",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-06",
-      "price_cny": 4672,
+      "price_cny": 4869,
       "airlines": [
-        "南航"
+        "香港快运航空"
       ],
-      "detail": "PKX-CAN; CAN-BKK",
+      "detail": "PKX-HKG; HKG-BKK",
       "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEtYcgUSA0JLSxoaEgoyMDI2LTEwLTA2agUSA0JLS3IFEgNQS1hCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
     },
     {
@@ -175,6 +160,22 @@
       ],
       "detail": "PKX-HKG; HKG-BKK",
       "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEtYcgUSA0JLSxoaEgoyMDI2LTEwLTA2agUSA0JLS3IFEgNQS1hCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-thailand",
+      "watch_label": "Beijing to Bangkok sentinel round trip",
+      "origin": "PKX",
+      "destination": "BKK",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-06",
+      "price_cny": 8868,
+      "airlines": [
+        "香港快运航空",
+        "国泰航空"
+      ],
+      "detail": "PKX-HKG; HKG-BKK",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEtYcgUSA0JLSxoaEgoyMDI2LTEwLTA2agUSA0JLS3IFEgNQS1hCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
     },
     {
       "source": "google_fast_flights",
