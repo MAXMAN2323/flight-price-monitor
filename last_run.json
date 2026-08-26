@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-26T02:03:22.659969+00:00",
+  "checked_at": "2026-08-26T04:07:57.366012+00:00",
   "query_count": 32,
   "candidate_count": 30,
   "alert_count": 0,
@@ -727,7 +727,7 @@
       "destination": "BCN",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+      "error": "google_fast_flights query failed: IndexError: list index out of range"
     },
     {
       "source": "google_fast_flights",
