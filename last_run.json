@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-06T20:30:54.063063+00:00",
+  "checked_at": "2026-09-06T22:57:25.917735+00:00",
   "query_count": 32,
   "candidate_count": 26,
   "alert_count": 0,
@@ -492,7 +492,7 @@
       "destination": "BKK",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
     },
     {
       "source": "google_fast_flights",
@@ -573,7 +573,7 @@
       "destination": "DMK",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
     },
     {
       "source": "google_fast_flights",
