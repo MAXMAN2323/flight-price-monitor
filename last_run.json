@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-06T15:33:51.660489+00:00",
+  "checked_at": "2026-09-06T20:30:54.063063+00:00",
   "query_count": 32,
   "candidate_count": 26,
   "alert_count": 0,
@@ -125,7 +125,7 @@
       "destination": "BKK",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-06",
-      "price_cny": 6344,
+      "price_cny": 6804,
       "airlines": [
         "香港快运航空"
       ],
@@ -140,7 +140,7 @@
       "destination": "BKK",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-06",
-      "price_cny": 6473,
+      "price_cny": 6933,
       "airlines": [
         "香港快运航空"
       ],
