@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-09-11T11:31:14.506188+00:00",
+  "checked_at": "2026-09-11T16:35:45.772206+00:00",
   "query_count": 32,
-  "candidate_count": 23,
+  "candidate_count": 22,
   "alert_count": 0,
   "alerts": [],
   "health_alert_count": 0,
@@ -11,7 +11,7 @@
     "full_run": true,
     "expected_query_count": 32,
     "query_count": 32,
-    "candidate_count": 23,
+    "candidate_count": 22,
     "error_count": 25,
     "error_ratio": 0.7812,
     "min_successful_candidates": 5,
@@ -46,7 +46,7 @@
       "destination": "MAD",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-07",
-      "price_cny": 16160,
+      "price_cny": 16939,
       "airlines": [
         "海航",
         "神鹰航空",
@@ -125,7 +125,7 @@
       "destination": "MAD",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-07",
-      "price_cny": 16160,
+      "price_cny": 16939,
       "airlines": [
         "海航",
         "神鹰航空",
@@ -190,7 +190,7 @@
       "destination": "MAD",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-07",
-      "price_cny": 33768,
+      "price_cny": 33758,
       "airlines": [
         "国航",
         "奧地利航空",
@@ -207,7 +207,7 @@
       "destination": "MAD",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-07",
-      "price_cny": 33768,
+      "price_cny": 33758,
       "airlines": [
         "国航",
         "奧地利航空",
@@ -222,96 +222,80 @@
       "watch_label": "Beijing to Spain round trip",
       "origin": "PEK",
       "destination": "MAD",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-07",
-      "price_cny": 33814,
-      "airlines": [
-        "国航",
-        "汉莎航空"
-      ],
-      "detail": "PEK-MUC; MUC-FRA; FRA-MAD",
-      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA3agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "watch_label": "Beijing to Spain round trip",
-      "origin": "PEK",
-      "destination": "MAD",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-07",
-      "price_cny": 33814,
-      "airlines": [
-        "国航",
-        "汉莎航空"
-      ],
-      "detail": "PEK-MUC; MUC-FRA; FRA-MAD",
-      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA3agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "watch_label": "Beijing to Spain round trip",
-      "origin": "PEK",
-      "destination": "MAD",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-07",
-      "price_cny": 33814,
-      "airlines": [
-        "国航",
-        "汉莎航空"
-      ],
-      "detail": "PEK-MUC; MUC-FRA; FRA-MAD",
-      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA3agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "watch_label": "Beijing to Spain round trip",
-      "origin": "PEK",
-      "destination": "MAD",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-07",
-      "price_cny": 33814,
-      "airlines": [
-        "国航",
-        "汉莎航空"
-      ],
-      "detail": "PEK-MUC; MUC-FRA; FRA-MAD",
-      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA3agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "watch_label": "Beijing to Spain round trip",
-      "origin": "PEK",
-      "destination": "MAD",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-07",
-      "price_cny": 33814,
-      "airlines": [
-        "国航",
-        "汉莎航空"
-      ],
-      "detail": "PEK-MUC; MUC-FRA; FRA-MAD",
-      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA3agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "watch_label": "Beijing to Spain round trip",
-      "origin": "PEK",
-      "destination": "MAD",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-06",
-      "price_cny": 45048,
+      "price_cny": 33758,
       "airlines": [
         "国航",
         "奧地利航空",
-        "Lufthansa City Airlines"
+        "汉莎航空"
       ],
-      "detail": "PEK-VIE; VIE-MUC; MUC-MAD",
-      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA2agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+      "detail": "PEK-VIE; VIE-FRA; FRA-MAD",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA3agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "watch_label": "Beijing to Spain round trip",
+      "origin": "PEK",
+      "destination": "MAD",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-07",
+      "price_cny": 33804,
+      "airlines": [
+        "国航",
+        "汉莎航空"
+      ],
+      "detail": "PEK-MUC; MUC-FRA; FRA-MAD",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA3agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "watch_label": "Beijing to Spain round trip",
+      "origin": "PEK",
+      "destination": "MAD",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-07",
+      "price_cny": 33812,
+      "airlines": [
+        "国航",
+        "汉莎航空"
+      ],
+      "detail": "PEK-MUC; MUC-FRA; FRA-MAD",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA3agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "watch_label": "Beijing to Spain round trip",
+      "origin": "PEK",
+      "destination": "MAD",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-07",
+      "price_cny": 33812,
+      "airlines": [
+        "国航",
+        "汉莎航空"
+      ],
+      "detail": "PEK-MUC; MUC-FRA; FRA-MAD",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA3agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "watch_label": "Beijing to Spain round trip",
+      "origin": "PEK",
+      "destination": "MAD",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-07",
+      "price_cny": 33812,
+      "airlines": [
+        "国航",
+        "汉莎航空"
+      ],
+      "detail": "PEK-MUC; MUC-FRA; FRA-MAD",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA3agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
     },
     {
       "source": "google_fast_flights",
@@ -321,7 +305,7 @@
       "destination": "MAD",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-06",
-      "price_cny": 45048,
+      "price_cny": 45045,
       "airlines": [
         "国航",
         "奧地利航空",
@@ -338,7 +322,7 @@
       "destination": "MAD",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-06",
-      "price_cny": 45048,
+      "price_cny": 45045,
       "airlines": [
         "国航",
         "奧地利航空",
@@ -355,7 +339,7 @@
       "destination": "MAD",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-06",
-      "price_cny": 45094,
+      "price_cny": 45091,
       "airlines": [
         "国航",
         "汉莎航空"
@@ -371,7 +355,7 @@
       "destination": "MAD",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-06",
-      "price_cny": 45094,
+      "price_cny": 45091,
       "airlines": [
         "国航",
         "汉莎航空"
@@ -387,7 +371,7 @@
       "destination": "MAD",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-06",
-      "price_cny": 45094,
+      "price_cny": 45091,
       "airlines": [
         "国航",
         "汉莎航空"
@@ -403,7 +387,7 @@
       "destination": "MAD",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-06",
-      "price_cny": 45108,
+      "price_cny": 45104,
       "airlines": [
         "国航",
         "汉莎航空",
@@ -420,7 +404,7 @@
       "destination": "MAD",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-06",
-      "price_cny": 45108,
+      "price_cny": 45104,
       "airlines": [
         "国航",
         "汉莎航空",
