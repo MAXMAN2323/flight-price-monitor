@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-20T16:14:56.609965+00:00",
+  "checked_at": "2026-09-20T20:56:02.207223+00:00",
   "query_count": 32,
   "candidate_count": 20,
   "alert_count": 0,
@@ -46,7 +46,7 @@
       "destination": "MAD",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-06",
-      "price_cny": 17439,
+      "price_cny": 17822,
       "airlines": [
         "海航",
         "神鹰航空",
@@ -110,7 +110,7 @@
       "destination": "MAD",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-06",
-      "price_cny": 17439,
+      "price_cny": 17822,
       "airlines": [
         "海航",
         "神鹰航空",
