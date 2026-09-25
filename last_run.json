@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-09-25T05:05:54.596885+00:00",
+  "checked_at": "2026-09-25T11:59:17.289000+00:00",
   "query_count": 32,
-  "candidate_count": 23,
+  "candidate_count": 28,
   "alert_count": 0,
   "alerts": [],
   "health_alert_count": 0,
@@ -11,9 +11,9 @@
     "full_run": true,
     "expected_query_count": 32,
     "query_count": 32,
-    "candidate_count": 23,
-    "error_count": 27,
-    "error_ratio": 0.8438,
+    "candidate_count": 28,
+    "error_count": 23,
+    "error_ratio": 0.7188,
     "min_successful_candidates": 5,
     "unhealthy_error_ratio": 0.9,
     "too_few_candidates": false,
@@ -31,7 +31,7 @@
       "destination": "BKK",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-06",
-      "price_cny": 5044,
+      "price_cny": 6113,
       "airlines": [
         "国航",
         "深航"
@@ -44,15 +44,16 @@
       "watch_id": "beijing-spain",
       "watch_label": "Beijing to Spain round trip",
       "origin": "PEK",
-      "destination": "MAD",
+      "destination": "BCN",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-07",
-      "price_cny": 28070,
+      "price_cny": 23261,
       "airlines": [
-        "法航"
+        "法航",
+        "荷航"
       ],
-      "detail": "PEK-CDG; CDG-MAD",
-      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA3agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+      "detail": "PEK-CDG; CDG-AMS; AMS-BCN",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA0JDThoaEgoyMDI2LTEwLTA3agUSA0JDTnIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
     }
   },
   "candidates": [
@@ -64,7 +65,7 @@
       "destination": "BKK",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-06",
-      "price_cny": 5044,
+      "price_cny": 6113,
       "airlines": [
         "国航",
         "深航"
@@ -80,23 +81,7 @@
       "destination": "BKK",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-06",
-      "price_cny": 5964,
-      "airlines": [
-        "国航",
-        "深航"
-      ],
-      "detail": "PEK-SZX; SZX-BKK",
-      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA0JLSxoaEgoyMDI2LTEwLTA2agUSA0JLS3IFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-thailand",
-      "watch_label": "Beijing to Bangkok sentinel round trip",
-      "origin": "PEK",
-      "destination": "BKK",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-06",
-      "price_cny": 5964,
+      "price_cny": 6113,
       "airlines": [
         "深航"
       ],
@@ -126,12 +111,123 @@
       "destination": "BKK",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-06",
-      "price_cny": 7698,
+      "price_cny": 8475,
       "airlines": [
         "国泰航空"
       ],
       "detail": "PEK-HKG; HKG-BKK",
       "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA0JLSxoaEgoyMDI2LTEwLTA2agUSA0JLS3IFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-thailand",
+      "watch_label": "Beijing to Bangkok sentinel round trip",
+      "origin": "PEK",
+      "destination": "BKK",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-06",
+      "price_cny": 8475,
+      "airlines": [
+        "国泰航空"
+      ],
+      "detail": "PEK-HKG; HKG-BKK",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA0JLSxoaEgoyMDI2LTEwLTA2agUSA0JLS3IFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "watch_label": "Beijing to Spain round trip",
+      "origin": "PEK",
+      "destination": "BCN",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-07",
+      "price_cny": 23261,
+      "airlines": [
+        "法航",
+        "荷航"
+      ],
+      "detail": "PEK-CDG; CDG-AMS; AMS-BCN",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA0JDThoaEgoyMDI2LTEwLTA3agUSA0JDTnIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "watch_label": "Beijing to Spain round trip",
+      "origin": "PEK",
+      "destination": "BCN",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-07",
+      "price_cny": 23261,
+      "airlines": [
+        "法航",
+        "荷航"
+      ],
+      "detail": "PEK-CDG; CDG-AMS; AMS-BCN",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA0JDThoaEgoyMDI2LTEwLTA3agUSA0JDTnIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "watch_label": "Beijing to Spain round trip",
+      "origin": "PEK",
+      "destination": "BCN",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-07",
+      "price_cny": 23261,
+      "airlines": [
+        "法航",
+        "荷航"
+      ],
+      "detail": "PEK-CDG; CDG-AMS; AMS-BCN",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA0JDThoaEgoyMDI2LTEwLTA3agUSA0JDTnIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "watch_label": "Beijing to Spain round trip",
+      "origin": "PEK",
+      "destination": "BCN",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-06",
+      "price_cny": 26379,
+      "airlines": [
+        "法航",
+        "荷航"
+      ],
+      "detail": "PEK-CDG; CDG-AMS; AMS-BCN",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA0JDThoaEgoyMDI2LTEwLTA2agUSA0JDTnIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "watch_label": "Beijing to Spain round trip",
+      "origin": "PEK",
+      "destination": "BCN",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-06",
+      "price_cny": 26379,
+      "airlines": [
+        "法航",
+        "荷航"
+      ],
+      "detail": "PEK-CDG; CDG-AMS; AMS-BCN",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA0JDThoaEgoyMDI2LTEwLTA2agUSA0JDTnIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "watch_label": "Beijing to Spain round trip",
+      "origin": "PEK",
+      "destination": "BCN",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-06",
+      "price_cny": 26379,
+      "airlines": [
+        "法航",
+        "荷航"
+      ],
+      "detail": "PEK-CDG; CDG-AMS; AMS-BCN",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA0JDThoaEgoyMDI2LTEwLTA2agUSA0JDTnIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
     },
     {
       "source": "google_fast_flights",
@@ -172,7 +268,7 @@
       "destination": "MAD",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-06",
-      "price_cny": 29241,
+      "price_cny": 29482,
       "airlines": [
         "法航"
       ],
@@ -184,80 +280,32 @@
       "watch_id": "beijing-spain",
       "watch_label": "Beijing to Spain round trip",
       "origin": "PEK",
-      "destination": "MAD",
+      "destination": "BCN",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-06",
-      "price_cny": 29482,
+      "price_cny": 32964,
       "airlines": [
         "法航",
-        "荷航"
+        "泛航航空"
       ],
-      "detail": "PEK-CDG; CDG-AMS; AMS-MAD",
-      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA2agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+      "detail": "PEK-CDG; CDG-AMS; AMS-BCN",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA0JDThoaEgoyMDI2LTEwLTA2agUSA0JDTnIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
     },
     {
       "source": "google_fast_flights",
       "watch_id": "beijing-spain",
       "watch_label": "Beijing to Spain round trip",
       "origin": "PEK",
-      "destination": "MAD",
+      "destination": "BCN",
       "outbound_date": "2026-09-25",
       "return_date": "2026-10-06",
-      "price_cny": 29582,
+      "price_cny": 32964,
       "airlines": [
-        "国航",
-        "汉莎航空"
+        "法航",
+        "泛航航空"
       ],
-      "detail": "PEK-SHA; PVG-FRA; FRA-MAD",
-      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA2agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "watch_label": "Beijing to Spain round trip",
-      "origin": "PEK",
-      "destination": "MAD",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-07",
-      "price_cny": 29590,
-      "airlines": [
-        "国航",
-        "汉莎航空"
-      ],
-      "detail": "PEK-SHA; PVG-FRA; FRA-MAD",
-      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA3agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "watch_label": "Beijing to Spain round trip",
-      "origin": "PEK",
-      "destination": "MAD",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-06",
-      "price_cny": 33618,
-      "airlines": [
-        "国航",
-        "汉莎航空"
-      ],
-      "detail": "PEK-SHA; PVG-MUC; MUC-MAD",
-      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA2agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "watch_label": "Beijing to Spain round trip",
-      "origin": "PEK",
-      "destination": "MAD",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-07",
-      "price_cny": 33626,
-      "airlines": [
-        "国航",
-        "汉莎航空"
-      ],
-      "detail": "PEK-SHA; PVG-MUC; MUC-MAD",
-      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA3agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+      "detail": "PEK-CDG; CDG-AMS; AMS-BCN",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEVLcgUSA0JDThoaEgoyMDI2LTEwLTA2agUSA0JDTnIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
     },
     {
       "source": "google_fast_flights",
@@ -345,6 +393,22 @@
       "source": "google_fast_flights",
       "watch_id": "beijing-spain",
       "watch_label": "Beijing to Spain round trip",
+      "origin": "PKX",
+      "destination": "BCN",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-06",
+      "price_cny": 42183,
+      "airlines": [
+        "东航",
+        "奧地利航空"
+      ],
+      "detail": "PKX-XIY; XIY-VIE; VIE-BCN",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEtYcgUSA0JDThoaEgoyMDI2LTEwLTA2agUSA0JDTnIFEgNQS1hCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "watch_label": "Beijing to Spain round trip",
       "origin": "PEK",
       "destination": "MAD",
       "outbound_date": "2026-09-26",
@@ -423,6 +487,22 @@
       ],
       "detail": "PEK-MUC; MUC-FRA; FRA-MAD",
       "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA01BRBoaEgoyMDI2LTEwLTA2agUSA01BRHIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "watch_label": "Beijing to Spain round trip",
+      "origin": "PKX",
+      "destination": "BCN",
+      "outbound_date": "2026-09-25",
+      "return_date": "2026-10-07",
+      "price_cny": 49905,
+      "airlines": [
+        "东航",
+        "奧地利航空"
+      ],
+      "detail": "PKX-XIY; XIY-VIE; VIE-BCN",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjVqBRIDUEtYcgUSA0JDThoaEgoyMDI2LTEwLTA3agUSA0JDTnIFEgNQS1hCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
     }
   ],
   "errors": [
@@ -559,25 +639,7 @@
       "destination": "DMK",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PEK",
-      "destination": "BCN",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: IndexError: list index out of range"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PEK",
-      "destination": "BCN",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: IndexError: list index out of range"
+      "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
     },
     {
       "source": "google_fast_flights",
@@ -632,24 +694,6 @@
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-07",
       "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PKX",
-      "destination": "BCN",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: IndexError: list index out of range"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PKX",
-      "destination": "BCN",
-      "outbound_date": "2026-09-25",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: IndexError: list index out of range"
     },
     {
       "source": "google_fast_flights",
