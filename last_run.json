@@ -1,53 +1,24 @@
 {
-  "checked_at": "2026-09-26T05:08:47.579322+00:00",
+  "checked_at": "2026-09-26T11:33:42.024326+00:00",
   "query_count": 32,
-  "candidate_count": 5,
+  "candidate_count": 9,
   "alert_count": 0,
   "alerts": [],
-  "health_alert_count": 1,
-  "health_alerts": [
-    {
-      "type": "source_unhealthy",
-      "source": "google_fast_flights",
-      "status": "degraded",
-      "checked_at": "2026-09-26T05:08:47.579322+00:00",
-      "streak_started_at": "2026-09-25T17:19:24.745223+00:00",
-      "consecutive_failures": 3,
-      "failure_threshold": 3,
-      "reminder_interval": 6,
-      "query_count": 32,
-      "candidate_count": 5,
-      "error_count": 31,
-      "error_ratio": 0.9688,
-      "min_successful_candidates": 5,
-      "unhealthy_error_ratio": 0.9,
-      "too_few_candidates": false,
-      "high_error_rate": true,
-      "error_summary": [
-        {
-          "count": 22,
-          "error": "google_fast_flights query failed: TypeError: 'NoneType' object is not subscriptable"
-        },
-        {
-          "count": 9,
-          "error": "google_fast_flights query failed: IndexError: list index out of range"
-        }
-      ]
-    }
-  ],
+  "health_alert_count": 0,
+  "health_alerts": [],
   "source_health": {
     "status": "degraded",
     "full_run": true,
     "expected_query_count": 32,
     "query_count": 32,
-    "candidate_count": 5,
-    "error_count": 31,
-    "error_ratio": 0.9688,
+    "candidate_count": 9,
+    "error_count": 29,
+    "error_ratio": 0.9062,
     "min_successful_candidates": 5,
     "unhealthy_error_ratio": 0.9,
     "too_few_candidates": false,
     "high_error_rate": true,
-    "consecutive_failures": 3,
+    "consecutive_failures": 4,
     "failure_threshold": 3,
     "reminder_interval": 6
   },
@@ -66,6 +37,21 @@
       ],
       "detail": "PEK-SZX; SZX-BKK",
       "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA0JLSxoaEgoyMDI2LTEwLTA2agUSA0JLS3IFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    },
+    "beijing-spain": {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "watch_label": "Beijing to Spain round trip",
+      "origin": "PEK",
+      "destination": "BCN",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-07",
+      "price_cny": 15176,
+      "airlines": [
+        "深航"
+      ],
+      "detail": "PEK-SZX; SZX-BCN",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA0JDThoaEgoyMDI2LTEwLTA3agUSA0JDTnIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
     }
   },
   "candidates": [
@@ -79,22 +65,6 @@
       "return_date": "2026-10-06",
       "price_cny": 6153,
       "airlines": [
-        "深航"
-      ],
-      "detail": "PEK-SZX; SZX-BKK",
-      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA0JLSxoaEgoyMDI2LTEwLTA2agUSA0JLS3IFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-thailand",
-      "watch_label": "Beijing to Bangkok sentinel round trip",
-      "origin": "PEK",
-      "destination": "BKK",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-06",
-      "price_cny": 6763,
-      "airlines": [
-        "国航",
         "深航"
       ],
       "detail": "PEK-SZX; SZX-BKK",
@@ -138,12 +108,88 @@
       "destination": "BKK",
       "outbound_date": "2026-09-26",
       "return_date": "2026-10-06",
-      "price_cny": 10353,
+      "price_cny": 12653,
       "airlines": [
-        "海航"
+        "华航"
       ],
-      "detail": "PEK-HAK; HAK-BKK",
+      "detail": "PEK-TPE; TPE-BKK",
       "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA0JLSxoaEgoyMDI2LTEwLTA2agUSA0JLS3IFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "watch_label": "Beijing to Spain round trip",
+      "origin": "PEK",
+      "destination": "BCN",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-07",
+      "price_cny": 15176,
+      "airlines": [
+        "深航"
+      ],
+      "detail": "PEK-SZX; SZX-BCN",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA0JDThoaEgoyMDI2LTEwLTA3agUSA0JDTnIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "watch_label": "Beijing to Spain round trip",
+      "origin": "PEK",
+      "destination": "BCN",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-07",
+      "price_cny": 17644,
+      "airlines": [
+        "国泰航空"
+      ],
+      "detail": "PEK-HKG; HKG-BCN",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA0JDThoaEgoyMDI2LTEwLTA3agUSA0JDTnIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "watch_label": "Beijing to Spain round trip",
+      "origin": "PEK",
+      "destination": "BCN",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-06",
+      "price_cny": 18075,
+      "airlines": [
+        "国航",
+        "深航"
+      ],
+      "detail": "PEK-SZX; SZX-BCN",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA0JDThoaEgoyMDI2LTEwLTA2agUSA0JDTnIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "watch_label": "Beijing to Spain round trip",
+      "origin": "PEK",
+      "destination": "BCN",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-06",
+      "price_cny": 18075,
+      "airlines": [
+        "深航"
+      ],
+      "detail": "PEK-SZX; SZX-BCN",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA0JDThoaEgoyMDI2LTEwLTA2agUSA0JDTnIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
+    },
+    {
+      "source": "google_fast_flights",
+      "watch_id": "beijing-spain",
+      "watch_label": "Beijing to Spain round trip",
+      "origin": "PEK",
+      "destination": "BCN",
+      "outbound_date": "2026-09-26",
+      "return_date": "2026-10-06",
+      "price_cny": 27592,
+      "airlines": [
+        "国泰航空"
+      ],
+      "detail": "PEK-HKG; HKG-BCN",
+      "url": "https://www.google.com/travel/flights/search?tfs=GhoSCjIwMjYtMDktMjZqBRIDUEVLcgUSA0JDThoaEgoyMDI2LTEwLTA2agUSA0JDTnIFEgNQRUtCAQFIAZgBAQ==&hl=zh-CN&curr=CNY"
     }
   ],
   "errors": [
@@ -339,24 +385,6 @@
     {
       "source": "google_fast_flights",
       "watch_id": "beijing-spain",
-      "origin": "PEK",
-      "destination": "BCN",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-06",
-      "error": "google_fast_flights query failed: IndexError: list index out of range"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
-      "origin": "PEK",
-      "destination": "BCN",
-      "outbound_date": "2026-09-26",
-      "return_date": "2026-10-07",
-      "error": "google_fast_flights query failed: IndexError: list index out of range"
-    },
-    {
-      "source": "google_fast_flights",
-      "watch_id": "beijing-spain",
       "origin": "PKX",
       "destination": "MAD",
       "outbound_date": "2026-09-25",
@@ -433,13 +461,5 @@
     "kayak_momondo": "Probed but not enabled. Static page loads; result polling API needs front-end metadata and browser runs redirect to bot page.",
     "paid_api_ready": "The monitor can be extended to SerpApi/SearchApi/Travelpayouts/Amadeus if an API key is supplied."
   },
-  "notification_results": [
-    {
-      "channel": "pushplus",
-      "status": "sent",
-      "code": 200,
-      "data": "9e6949c81f1041dda70cd498238b0a61"
-    }
-  ],
-  "health_state_update": "health alert marker saved after notification was sent"
+  "notification_results": []
 }
