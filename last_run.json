@@ -1,11 +1,36 @@
 {
-  "checked_at": "2026-09-30T12:45:06.621177+00:00",
+  "checked_at": "2026-09-30T20:07:48.426307+00:00",
   "query_count": 32,
   "candidate_count": 0,
   "alert_count": 0,
   "alerts": [],
-  "health_alert_count": 0,
-  "health_alerts": [],
+  "health_alert_count": 1,
+  "health_alerts": [
+    {
+      "type": "source_unhealthy",
+      "source": "google_fast_flights",
+      "status": "failed",
+      "checked_at": "2026-09-30T20:07:48.426307+00:00",
+      "streak_started_at": "2026-09-25T17:19:24.745223+00:00",
+      "consecutive_failures": 21,
+      "failure_threshold": 3,
+      "reminder_interval": 6,
+      "query_count": 32,
+      "candidate_count": 0,
+      "error_count": 32,
+      "error_ratio": 1.0,
+      "min_successful_candidates": 5,
+      "unhealthy_error_ratio": 0.9,
+      "too_few_candidates": true,
+      "high_error_rate": true,
+      "error_summary": [
+        {
+          "count": 32,
+          "error": "google_fast_flights query failed: FlightsNotFound: no flights found; received error"
+        }
+      ]
+    }
+  ],
   "source_health": {
     "status": "failed",
     "full_run": true,
@@ -18,7 +43,7 @@
     "unhealthy_error_ratio": 0.9,
     "too_few_candidates": true,
     "high_error_rate": true,
-    "consecutive_failures": 20,
+    "consecutive_failures": 21,
     "failure_threshold": 3,
     "reminder_interval": 6
   },
@@ -320,5 +345,13 @@
     "kayak_momondo": "Probed but not enabled. Static page loads; result polling API needs front-end metadata and browser runs redirect to bot page.",
     "paid_api_ready": "The monitor can be extended to SerpApi/SearchApi/Travelpayouts/Amadeus if an API key is supplied."
   },
-  "notification_results": []
+  "notification_results": [
+    {
+      "channel": "pushplus",
+      "status": "sent",
+      "code": 200,
+      "data": "77f91f76db3d423dbc6a52b820d9ea5d"
+    }
+  ],
+  "health_state_update": "health alert marker saved after notification was sent"
 }
