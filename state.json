@@ -97,17 +97,17 @@
     }
   },
   "source_health": {
-    "consecutive_failures": 38,
-    "last_failure_at": "2026-10-05T14:52:54.363170+00:00",
-    "last_checked_at": "2026-10-05T14:52:54.363170+00:00",
+    "consecutive_failures": 39,
+    "last_failure_at": "2026-10-05T22:05:51.280763+00:00",
+    "last_checked_at": "2026-10-05T22:05:51.280763+00:00",
     "last_status": "failed",
     "last_query_count": 32,
     "last_candidate_count": 0,
     "last_error_count": 32,
     "last_error_ratio": 1.0,
-    "last_alert_at": "2026-10-04T06:02:43.213120+00:00",
+    "last_alert_at": "2026-10-05T22:05:52.352169+00:00",
     "last_success_at": "2026-09-25T11:59:17.289000+00:00",
     "streak_started_at": "2026-09-25T17:19:24.745223+00:00",
-    "last_alert_failure_count": 33
+    "last_alert_failure_count": 39
   }
 }
