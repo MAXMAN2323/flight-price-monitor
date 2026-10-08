@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-08T01:05:33.308443+00:00",
+  "checked_at": "2026-10-08T10:44:07.778897+00:00",
   "query_count": 32,
   "candidate_count": 0,
   "alert_count": 0,
@@ -18,7 +18,7 @@
     "unhealthy_error_ratio": 0.9,
     "too_few_candidates": true,
     "high_error_rate": true,
-    "consecutive_failures": 46,
+    "consecutive_failures": 47,
     "failure_threshold": 3,
     "reminder_interval": 6
   },
